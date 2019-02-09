@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "ItemFarming",
+  "short_name": "ItemFarming",
+  "version": "org.oraclejet.itemfarming",
+  "description": "An Oracle JavaScript Extension Toolkit (JET) mobile app",
+  "author": "Apache Cordova Team",
+  "icons": [],
+  "start_url": "index.html"
+}
