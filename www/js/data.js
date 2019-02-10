@@ -1,4 +1,11 @@
-define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout', 'ojs/ojmodule-element', 'ojs/ojrouter', 'ojs/ojarraytabledatasource', 'ojs/ojoffcanvas', 'ojs/ojbutton'],
+define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils',
+  'ojs/ojknockout',
+  'ojs/ojmodule-element',
+  'ojs/ojrouter',
+  'ojs/ojarraytabledatasource',
+  'ojs/ojoffcanvas',
+  'ojs/ojbutton',
+  'ojs/ojmasonrylayout'],
         function (oj, ko, moduleUtils) {
           function Data() {
             var self = this;
@@ -6,16 +13,6 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
             self.materialSize = ko.observable(0);
             self.materialsNeeded = ko.observable({});
             self.materialNodes = ko.observable();
-
-//            self.materialNodes.subscribe((newVal) => {
-//              for (let i in newVal) {
-//                let tag = newVal[i];
-//                tag.bind("DOMSubtreeModified", function () {
-//                  alert('changed');
-//                });
-//              }
-//            });
-
             self.selectionSet = new Set([]);
 
             self.items = ko.observableArray([]);
@@ -40,26 +37,29 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
                 }
               }
               self.selectedItems = out;
-              console.log(out);
             });
 
             self.currentMaterials = ko.observableArray([]);
+            self.currentMaterials.subscribe(_ => {
+
+            });
 
             self.materials.subscribe((newVal) => {
               let arr = [];
               for (let i in Object.keys(newVal)) {
                 let material = newVal[i];
-                arr[material.id] = 0;
+                arr[material.id] = ko.observable(0);
+                arr[material.id].subscribe(() => {
+                  self.materialsNeeded.valueHasMutated();
+                });
               }
-              console.log(arr);
-
               self.currentMaterials(arr);
             });
 
 //            window.setTimeout(self.calcAllDiff(), 500);
 
             self.calcDiff = function (id) {
-              let dif = self.materialsNeeded()[id] - self.currentMaterials()[id];
+              let dif = self.materialsNeeded()[id] - self.currentMaterials()[id]();
               if (dif > 0)
                 return dif;
               else
@@ -190,16 +190,24 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
               enemy: (enemy) => self.enemies(self.removeElement(self.enemies(), enemy))
             };
 
+            self.update = (obj, idx, item) => {
+              let objects = obj();
+              item.id = objects[idx].id
+              objects[idx] = item;
+              obj(objects);
+            };
+
             self.verifyExisting = (obj, objSize, item) => {
               let objects = obj();
               for (let i in objects) {
                 let object = objects[i];
                 if (Object.values(object).includes(item.name)) {
+                  // overrite and return false
+                  self.update(obj, i, item);
                   return false;
                 }
               }
               item.id = objSize();
-//              item.value = objSize();
               objects.push(item);
               obj(objects);
               return true;
@@ -209,12 +217,18 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
               return array.filter(e => e !== element);
             };
 
+            self.extend = (obj, src) => {
+              for (var key in src) {
+                if (src.hasOwnProperty(key))
+                  obj[key] = src[key];
+              }
+              return obj;
+            }
+
+
+
 
           }
-
-
-
-
 
           return new Data();
         }

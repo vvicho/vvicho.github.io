@@ -14,7 +14,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
             var self = this;
             self.data = data;
 
-            self.max = 10;
+            self.max = 99;
             self.min = 1;
             self.step = 1;
             self.materialValue = ko.observable(1);
@@ -23,12 +23,12 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
             // Header Config
             self.val = ko.observable('Weapons');
             self.weaponVal = ko.observable('Sora');
-            self.armourVal = ko.observable('Armor');
+            self.armorVal = ko.observable('Armor');
             self.accVal = ko.observable('Accessories');
             self.currMaterial = ko.observableArray([]);
             self.itemType = ko.observable({
               'Weapons': ['Sora', 'Donald', 'Goofy'],
-              'Armour': ['Armor'],
+              'Armor': ['Armor'],
               'Accessories': ['Accessories'],
               'Items': ['Items'],
               'Materials': ['Materials']
@@ -78,6 +78,37 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
               self.add();
             };
 
+            self.loadItem = data => {
+              console.log(data);
+              self.val(data.category);
+              switch (data.category) {
+                case 'Weapons':
+                  self.weaponVal(data.type);
+                  break;
+                case 'Armor':
+                  self.armorVal(data.type);
+                  break;
+                case 'Accessory':
+                  self.accVal(data.type);
+                  break;
+              }
+              self.textVal(data.name);
+              self.fillMaterials(data.materials);
+            }
+
+            self.fillMaterials = materials => {
+              self.currMaterial([]);
+              let aux = [];
+              materials.forEach(mat => {
+                aux.push({
+                  id: mat.id,
+                  qty: mat.qty
+                })
+              });
+              console.log(aux);
+              self.currMaterial(aux);
+            }
+
 //            $(document).keyup(function (event) {
 //              var keycode = event.keyCode;
 //              console.log(keycode);
@@ -97,8 +128,8 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
                 case "Weapons":
                   type = self.weaponVal();
                   break;
-                case "Armour" :
-                  type = self.armourVal();
+                case "Armor" :
+                  type = self.armorVal();
                   break;
                 case "Accessories" :
                   type = self.accVal();

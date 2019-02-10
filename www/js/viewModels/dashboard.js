@@ -7,12 +7,74 @@
  * Your dashboard ViewModel code goes here
  */
 define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-element-utils', 'data',
-  'ojs/ojcollapsible', 'ojs/ojinputnumber', 'ojs/ojbutton', 'ojs/ojcheckboxset', 'ojs/ojradioset', 'ojs/ojlabel'],
+  'ojs/ojcollapsible', 'ojs/ojinputnumber', 'ojs/ojbutton', 'ojs/ojcheckboxset', 'ojs/ojradioset', 'ojs/ojlabel',
+  'ojs/ojswitch'],
         function (oj, ko, $, app, moduleUtils, data) {
 
           function DashboardViewModel() {
             var self = this;
             self.data = data;
+
+            self.isChecked = ko.observable(false);
+            self.isChecked.subscribe((val) => {
+              console.log(val);
+              self.setItems(val);
+            });
+
+            self.toggleSelectAll = () => {
+              console.log('is checked ' + self.isChecked());
+              self.setItems(self.isChecked());
+            }
+
+            self.highlighSelection = function () {
+              var boxes = $('.oj-choice-item');
+              boxes.each((key, value) => {
+                // boxes[key].className = 'oj-choice-item oj-enabled' + (self.isChecked() ? ' oj-selected' : '');
+
+              });
+            };
+
+            self.setItems = value => {
+              console.log(data.itemsOrdered());
+              if (value) {
+                let types = {};
+                for (var category in data.itemsOrdered()) {
+                  let keys = Object.keys(data.itemsOrdered()[category]);
+                  for (let i in keys) {
+                    let key = keys[i];
+                    console.log(key);
+                    if (types[key] === undefined) {
+                      console.log(data.itemsOrdered()[category][key])
+                      types[key] = data.itemsOrdered()[category][key];
+                    } else {
+                      types[key] = types[key].concat(data.itemsOrdered()[category][key]);
+                    }
+                    console.log(types);
+                  }
+                }
+
+                console.log(types);
+                console.log(data.itemsOrdered());
+
+                for (var type in types) {
+                  var arr = [];
+                  var idx = 0;
+                  for (var i in types[type]) {
+                    arr[idx++] = types[type][i].id + '';
+                  }
+                  data.selectedItems[type](arr);
+                }
+              } else {
+                for (var type in data.selectedItems) {
+                  data.selectedItems[type]([]);
+                }
+
+              }
+              //data.selection();
+              self.highlighSelection();
+            }
+
+
 
             // Header Config
             self.headerConfig = ko.observable({'view': [], 'viewModel': null});
@@ -25,11 +87,6 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
             self.step = 1;
             self.materialValue = ko.observableArray([]);
             self.itemSelection = ko.observable({});
-
-            self.refreshItems = () =>
-              data.materialsNeeded.valueHasMutated();
-
-
 
             self.items = data.itemsOrdered;
 
@@ -65,6 +122,10 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojmodule-eleme
               // Implement if needed
             };
           }
+
+          $('.oj-inputnumber-input').on('change', function () {
+            console.log(this);
+          });
 
           /*
            * Returns a constructor for the ViewModel so that the ViewModel is constructed

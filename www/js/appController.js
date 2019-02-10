@@ -15,10 +15,10 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
             self.router = oj.Router.rootInstance;
             self.router.configure({
               'dashboard': {label: 'Dashboard', isDefault: true},
-              'items': {label: 'Forgeable Items'},
-              'enemies': {label: 'Enemies'},
-              'locations': {label: 'Locations'},
-              'materials': {label: 'Material'}
+//              'items': {label: 'Forgeable Items'},
+//              'enemies': {label: 'Enemies'},
+//              'locations': {label: 'Locations'},
+//              'materials': {label: 'Material'}
             });
             oj.Router.defaults['urlAdapter'] = new oj.Router.urlParamAdapter();
 
@@ -45,14 +45,14 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockout'
             var navData = [
               {name: 'Dashboard', id: 'dashboard',
                 iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'},
-              {name: 'Forgeable Items', id: 'items',
-                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'},
-              {name: 'Enemies', id: 'enemies',
-                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},
-              {name: 'Locations', id: 'locations',
-                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-person-icon-24'},
-              {name: 'Materials', id: 'materials',
-                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'}
+//              {name: 'Forgeable Items', id: 'items',
+//                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'},
+//              {name: 'Enemies', id: 'enemies',
+//                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},
+//              {name: 'Locations', id: 'locations',
+//                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-person-icon-24'},
+//              {name: 'Materials', id: 'materials',
+//                iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'}
             ];
             self.navDataSource = new oj.ArrayTableDataSource(navData, {idAttribute: 'id'});
 

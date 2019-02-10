@@ -41,9 +41,9 @@
                 <!-- /ko -->
               </oj-select-one>
               <!-- /ko -->
-              <!-- ko if: val() === 'Armour' -->
-              <oj-select-one value="{{armourVal}}" id="item" style="max-width:20em">
-                <!-- ko foreach : itemType()['Armour'] -->
+              <!-- ko if: val() === 'Armor' -->
+              <oj-select-one value="{{armorVal}}" id="item" style="max-width:20em">
+                <!-- ko foreach : itemType()['Armor'] -->
                 <oj-option value="[[$data]]"><span data-bind="text: $data"></span></oj-option>
                 <!-- /ko -->
               </oj-select-one>
@@ -105,7 +105,7 @@
         <h1>Remove Items</h1>
         <div id='itemContainer' class='oj-flex'>
           <!-- ko foreach: items() -->
-          <div data-bind="attr: {'id':id}" class='item-container oj-flex-item oj-sm-5'>
+          <div data-bind="attr: {'id':id}, click: function(){$module.loadItem($data)}" class='item-container oj-flex-item oj-sm-5'>
             <div data-bind='text:name'></div> 
           </div>
           <!-- /ko -->
