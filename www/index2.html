@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kingdom Hearts 3 - Item Farming tool</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready; script-src 'self' *.oracle.com 'unsafe-inline' 'unsafe-eval' http://localhost:35729; style-src 'self' *.oracle.com  'unsafe-inline'; img-src * data:; connect-src ws: *"/>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" href="css/images/favicon.ico" type="image/x-icon"/>
+
+
+    <!-- This is the main css file for the default Alta theme -->
+<!-- injector:theme -->
+<link rel="stylesheet" href="css/alta/6.0.0/windows/alta.css" id="css"/>
+<!-- endinjector -->
+    <!-- This contains icon fonts used by the starter template -->
+    <link rel="stylesheet" href="css/demo-alta-site-min.css" type="text/css"/>
+
+    <!-- This is where you would add any app specific styling -->
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
+
+  </head>
+  <body class="oj-hybrid oj-platform-cordova oj-platform-windows">
+    <!-- template for rendering navigation items in the drawer -->
+    <script type="text/html" id="navTemplate">
+    <li><a href="#">
+        <span :class="[[$data['iconClass']]]"></span>
+        <oj-bind-text value="[[$data['name']]]"></oj-bind-text>
+      </a></li>
+  </script>
+
+  <div id="globalBody" class="oj-offcanvas-outer-wrapper oj-offcanvas-page">
+    <!--
+       ** Oracle JET V6.0.0 hybrid mobile application navigation drawer pattern.
+       ** Please see the demos under Cookbook/Patterns/App Shell: Hybrid Mobile 
+       ** and the CSS documentation under Support/API Docs/Non-Component Styling
+       ** on the JET website for more information on how to use this pattern.
+    -->
+    <div id="navDrawer" role="navigation" class="oj-hybrid-applayout-offcanvas oj-contrast-marker oj-offcanvas-start">
+      <!-- User Profile -->
+      <h2 class="demo-profile-name">Kingdom Hearts 3</h2>
+      <!-- Navigation -->
+      <oj-navigation-list class="oj-navigationlist-stack-icon-label" data="[[navDataSource]]" edge="start" item.renderer="[[oj.KnockoutTemplateUtils.getRenderer('navTemplate', true)]]" on-click="[[toggleDrawer]]" selection="{{router.stateId}}">
+      </oj-navigation-list>
+      <div class="oj-flex-bar oj-sm-justify-content-center">
+        <h2 class="demo-app-name">Kingdom Hearts 3</h2>
+      </div>
+    </div>
+
+    <oj-module id="pageContent" config="[[moduleConfig]]"></oj-module>
+
+  </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/cordovaMocks.js"></script>
+    <script type="text/javascript" src="js/libs/require/require.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+  </body>
+
+</html>
