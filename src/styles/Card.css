@@ -1,0 +1,11 @@
+.cardContainer {
+    padding: 4px;
+}
+
+.cardImage {
+    border-radius: 8px;
+    width: inherit;
+    cursor: pointer;
+    border-style: solid;
+    border-color: black;
+}

@@ -1,0 +1,65 @@
+.cardWithControlsContainer {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    cursor: default;
+    user-select: none;
+    font-weight: bold;
+}
+
+.controlsContainer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.extra {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -50%;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16pt;
+}
+
+.add {
+    margin-left: 20px;
+}
+
+.minus {
+    margin-right: 20px;
+}
