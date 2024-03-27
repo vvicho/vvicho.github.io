@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import CardMatrix from './components/CardMatrix'
-// import { loadObject, saveObject } from './utils/WriteReadBroker'
+import { loadObject, saveObject } from './utils/WriteReadBroker.js'
 // import getFilesInDir from './utils/filesUtils'
 
 

@@ -14,5 +14,5 @@ function loadLocalStorage(key) {
     return localStorage.getItem(key);
 }
 
-export default { saveObject, loadObject }
+export { saveObject, loadObject }
 
