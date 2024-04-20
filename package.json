@@ -7,12 +7,22 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "cardScraper": "node src/scraper/globalCardScraper.js",
     "preview": "vite preview"
   },
   "dependencies": {
     "@stylexjs/stylex": "^0.5.1",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "image-downloader": "^4.3.0",
+    "path": "^0.12.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-select": "^5.8.0",
+    "request": "^2.88.2",
+    "url": "^0.11.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

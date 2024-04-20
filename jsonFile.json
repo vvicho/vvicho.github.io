@@ -1,0 +1,32 @@
+{
+  "EB01-001": {
+    "id": "Kouzuki Oden_EB01-001",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Kouzuki Oden",
+    "imageName": "EB01-001.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red",
+      "Green"
+    ],
+    "category": [
+      "Land of Wano",
+      "Kouzuki Clan"
+    ],
+    "text": "All of your {Land of Wano} type Character cards without a Counter have a +1000 Counter, according to the rules.[DON!! x1] [When Attacking] If you have a {Land of Wano} type Character with a cost of 5 or more, this Leader gains +1000 power until the start of your next turn.",
+    "cardSet": "-Memorial Collection-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/EB01-001.png",
+    "cardSetCode": "EB01",
+    "cardId": "EB01-001",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "EB01-001"
+  }
+}

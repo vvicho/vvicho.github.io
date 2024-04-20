@@ -3,35 +3,19 @@ import Card from "./Card";
 import '../styles/CardMatrix.css';
 import CardWithControls from "./CardWithControls";
 
-export default function CardMatrix({ cardsData, size, callback, showControls }) {
-    function returnCardWithControls() {
-        // console.log(cardsData);
+const IMAGE_PATH = 'src/assets/cards/';
 
-        return <div className="cardMatrixContainer">
-            {Object.keys(cardsData).map((key, _) =>
-                <CardWithControls
-                    uri={cardsData[key].uri}
-                    callback={callback}
-                    size={size}
-                    key={cardsData[key].cardId}
-                    amount={cardsData[key].amount}
-                    cardId={key}
-                />
-            )}
-        </div>
-    }
-
-    if (showControls) {
-        return returnCardWithControls();
-    }
-
+export default function CardMatrix({ cardAmount, cardsData, size, callback, showControls }) {
     return <div className="cardMatrixContainer">
-        {Object.leys(cardsData).map((key, data) =>
-            <Card
-                uri={data.uri}
+        {Object.keys(cardsData).map((key, _) =>
+            <CardWithControls
+                showControls={showControls}
+                uri={`${IMAGE_PATH}/${cardsData[key].cardSetCode}/${cardsData[key].parallelId}.png`}
                 callback={callback}
                 size={size}
-                key={data.uri}
+                key={cardsData[key].parallelId}
+                amount={cardAmount[key] ?? 0}
+                cardId={key}
             />
         )}
     </div>
