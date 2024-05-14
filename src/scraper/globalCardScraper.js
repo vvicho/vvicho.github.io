@@ -181,7 +181,7 @@ const download = async (card, callback) => {
     });
 };
 
-const downloadMissingImages = async () => {
+const downloadMissingImages = async (url, lang) => {
     console.log('- downloading missing images');
     if (!missingCardImages.missingCards || missingCardImages.missingCards.length < 1) {
         console.log('-- no missing card images');
@@ -189,10 +189,10 @@ const downloadMissingImages = async () => {
     }
     const cardsToDownload = {};
 
-    const series = await getSeries(GLB_BASE_URL);
+    const series = await getSeries(url);
     for (var seriesId of series) {
         console.log(`-- getCardsFromSeries ${seriesId} start`);
-        let cards = await getCardsFromSeries(seriesId, GLB_BASE_URL, 'en');
+        let cards = await getCardsFromSeries(seriesId, url, lang);
 
         for (let i = 0; i < cards.length; i++) {
             const card = cards[i];
@@ -215,5 +215,5 @@ const downloadMissingImages = async () => {
     );
 }
 
-// await run(GLB_BASE_URL, 'en');
-await downloadMissingImages();
+await run(GLB_BASE_URL, 'en');
+await downloadMissingImages(GLB_BASE_URL, 'en');
