@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path'
 import { fileURLToPath } from 'url';
 import request from 'request';
+import missingCardImages from '../assets/missingCardImages.json' assert {type: 'json'};
 
 
 const GLB_BASE_URL = "https://en.onepiece-cardgame.com";
@@ -42,7 +43,7 @@ const run = async (url, lang) => {
 }
 
 const downloadImagesInBatches = async cards => {
-    const ids = Object.keys(cards);
+    let ids = Object.keys(cards);
     ids = ids.sort()
     const sliceIntoChunks = (arr, chunkSize) => {
         const newArr = [];
@@ -168,21 +169,7 @@ const getParallelId = (name, id, imgUrl) => {
     return `${id}_${match[1]}`;
 }
 
-// const downloadImage = async (url, card) => {
-//     const path = `${IMAGE_SAVE_PATH}/${card.cardSetCode}/${card.cardId}.png`;
-//     console.log('__filename:', path.dirname(fileURLToPath(import.meta.url)));
-//     // console.log('__dirname:', );
-//     return download.image({
-//         url,
-//         dest: path,
-//     });
-// };
-
-// const saveImageToFile = async (cardId, cardSet, image) => {
-//     image.data.pipe(fs.createWriteStream(`${IMAGE_SAVE_PATH}/${cardSet}/${cardId}.png`))
-// }
-
-const download = async function (card, callback) {
+const download = async (card, callback) => {
     console.log(`downloading ${card.parallelId}`);
     request.head(card.imageUrl, function (_a, _b, _c) {
         const directoryPath = path.join(path.resolve(), `${IMAGE_SAVE_PATH}/${card.cardSetCode}`);
@@ -194,4 +181,39 @@ const download = async function (card, callback) {
     });
 };
 
-await run(GLB_BASE_URL, 'en');
+const downloadMissingImages = async () => {
+    console.log('- downloading missing images');
+    if (!missingCardImages.missingCards || missingCardImages.missingCards.length < 1) {
+        console.log('-- no missing card images');
+        return;
+    }
+    const cardsToDownload = {};
+
+    const series = await getSeries(GLB_BASE_URL);
+    for (var seriesId of series) {
+        console.log(`-- getCardsFromSeries ${seriesId} start`);
+        let cards = await getCardsFromSeries(seriesId, GLB_BASE_URL, 'en');
+
+        for (let i = 0; i < cards.length; i++) {
+            const card = cards[i];
+            if (missingCardImages.missingCards.indexOf(card.cardId) >= 0) {
+                // download card
+                console.log(`--- adding card ${card.parallelId} to downloads`);
+                cardsToDownload[card.parallelId] = card;
+            }
+        }
+    }
+
+    console.log(`- Cards to download: ${JSON.stringify(cardsToDownload, null, 2)}`);
+
+    await downloadImagesInBatches(cardsToDownload);
+
+    fs.writeFile(
+        'src/assets/missingCardImages.json',
+        JSON.stringify({ missingCards: [] }, null, 2),
+        x => console.log(`finalized writing file \n${x}`)
+    );
+}
+
+// await run(GLB_BASE_URL, 'en');
+await downloadMissingImages();

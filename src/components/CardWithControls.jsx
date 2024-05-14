@@ -2,10 +2,19 @@ import React, { useState } from "react";
 import Card from "./Card";
 import '../styles/CardWithControls.css';
 
-export default function CardWithControls({ uri, size, callback, cardId, amount, showControls }) {
+export default function CardWithControls({
+    uri,
+    size,
+    callback,
+    cardId,
+    amount,
+    showControls,
+    showAmount = showControls
+}
+) {
     return (
         <div className='cardWithControlsContainer'>
-            {showControls && (
+            {showAmount && (
                 <div className='count'>{amount}</div>
             )}
             <Card uri={uri} size={size} callback={() => { }} key={cardId} />
