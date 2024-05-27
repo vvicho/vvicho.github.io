@@ -128,8 +128,8 @@ function App() {
   const getCollectedCards = () => {
     let col = {};
     Object.values(allCards)
-      .filter(card => collection[card.parallelId] && collection[card.parallelId] !== '')
-      .map(card => col[card.parallelId] = card);
+      .filter(card => collection[card?.parallelId] && collection[card?.parallelId] !== '')
+      .map(card => col[card?.parallelId] = card);
     col = defaultSort(col, 'parallelId');
     return col;
   }
