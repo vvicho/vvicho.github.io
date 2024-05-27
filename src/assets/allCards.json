@@ -37988,5 +37988,116 @@
       "Once Per Turn"
     ],
     "parallelId": "P-076"
+  },
+  "OP03-112_p2": {
+    "id": "Charlotte Pudding_OP03-112_p2",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Charlotte Pudding",
+    "imageName": "OP03-112_p2.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Big Mom Pirates"
+    ],
+    "text": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 [Sanji] or {Big Mom Pirates} type card other than [Charlotte Pudding] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "Regional 2024 wave2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-112_p2.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-112",
+    "activation": [
+      "On Play",
+      "Sanji",
+      "Charlotte Pudding"
+    ],
+    "parallelId": "OP03-112_p2"
+  },
+  "OP03-114_p3": {
+    "id": "Charlotte Linlin_OP03-114_p3",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Charlotte Linlin",
+    "imageName": "OP03-114_p3.png",
+    "cost": "10",
+    "attribute": "Special",
+    "power": "12000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "The Four Emperors",
+      "Big Mom Pirates"
+    ],
+    "text": "[On Play] If your Leader has the {Big Mom Pirates} type, add up to 1 card from the top of your deck to the top of your Life cards. Then, trash up to 1 card from the top of your opponent's Life cards.",
+    "cardSet": "Regional 2024 wave2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-114_p3.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-114",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP03-114_p3"
+  },
+  "OP03-123_p2": {
+    "id": "Charlotte Katakuri_OP03-123_p2",
+    "rarity": "SEC",
+    "cardType": "CHARACTER",
+    "name": "Charlotte Katakuri",
+    "imageName": "OP03-123_p2.png",
+    "cost": "8",
+    "attribute": "Strike",
+    "power": "8000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Big Mom Pirates"
+    ],
+    "text": "[On Play] Add up to 1 Character with a cost of 8 or less to the top or bottom of the owner's Life cards face-up.",
+    "cardSet": "Regional 2024 wave2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-123_p2.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-123",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP03-123_p2"
+  },
+  "P-043": {
+    "id": "Monkey.D.Luffy_P-043",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "P-043.png",
+    "cost": "7",
+    "attribute": "Strike",
+    "power": "7000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[On Play] Return up to 1 Character with a cost of 3 or less to the owner's hand.",
+    "cardSet": "Dreamhack Dallas 2024",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-043.png",
+    "cardSetCode": "P",
+    "cardId": "P-043",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "P-043"
   }
 }

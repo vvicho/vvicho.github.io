@@ -111,7 +111,6 @@ function App() {
       showNoAlts = false;
       setNoAlts(showNoAlts);
     }
-    console.log(`toggle Alts: noAlts: ${showNoAlts} - onlyAlts: ${showOnlyAlts}`)
     filterCards(visibleCollection, showOnlyAlts, showNoAlts);
   }
 
@@ -123,7 +122,6 @@ function App() {
       showOnlyAlts = false;
       setOnlyAlts(showOnlyAlts);
     }
-    console.log(`toggle No Alts: noAlts: ${showNoAlts} - onlyAlts: ${showOnlyAlts}`)
     filterCards(visibleCollection, showOnlyAlts, showNoAlts)
   }
 
@@ -172,7 +170,6 @@ function App() {
 
   function filterCards(col, showOnlyAlts = onlyAlts, showNoAlts = noAlts, collectionState = showCollectionState) {
     // setCardFilterText(val);
-    console.log(`filter cards: onlyAlts: ${showOnlyAlts} - noAlts: ${showNoAlts}`)
     let cards = filterCardsByName(col ?? visibleCollection,
       collection,
       {

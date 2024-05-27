@@ -45,7 +45,7 @@ const filterCards = (cards, cardAmounts, valueToPropertyMap, noAlts, onlyAlts, c
             if (filter[1] === '') return true;
             if (filter[0] === 'name') {
                 return x[filter[0]].toLocaleLowerCase().indexOf(filter[1].toLocaleLowerCase()) >= 0;
-            } else if (filter[0] === 'set') {
+            } else if (filter[0] === 'cardSetCode') {
                 return x[filter[0]].toLocaleLowerCase().indexOf(filter[1].toLocaleLowerCase()) === 0;
             }
         });

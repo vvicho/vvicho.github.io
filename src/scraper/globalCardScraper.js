@@ -235,4 +235,8 @@ const download = async (card, callback) => {
 // force will download everything again (remember to compress pngs)
 // await run(GLB_BASE_URL, 'en', force = true);
 
-await run(GLB_BASE_URL, 'en', true, false);
+// partial 
+// await run(GLB_BASE_URL, 'en', true, false);
+// full
+
+await run(GLB_BASE_URL, 'en', false, false);
