@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react';
 import Select from 'react-select';
-import './App.css'
-import CardMatrix from './components/CardMatrix'
-import { loadObject, saveObject } from './utils/WriteReadBroker.js'
-import cardFile from '/src/assets/allCards.json'
+import './App.css';
+import CardMatrix from './components/CardMatrix';
+import { loadObject, saveObject } from './utils/WriteReadBroker.js';
+import cardFile from '/src/assets/allCards.json';
+import donCards from '/src/assets/donCards.json';
+import allSets from '/src/assets/sets.json';
 import CardExportScreen from './components/CardExportScreen.jsx';
 import { exportComponentAsPNG } from 'react-component-export-image';
-import { defaultSort, filterCardsByName } from './utils/SortAndFilters.js';
+import { defaultSort, filterCardsByName, sortCards } from './utils/SortAndFilters.js';
 
 function App() {
   const VisibilityState = {
@@ -15,32 +17,43 @@ function App() {
     COLLECTED_CARDS: 3,
   };
 
-  const [allCards, _setAllCards] = useState(cardFile);
+  const [allCards, _setAllCards] = useState({ ...cardFile, ...donCards });
   const [collection, setCollection] = useState({});
   const [showControls, setShowControls] = useState(true);
-  const [currentCollection, setCurrentCollection] = useState('k');
+  const [currentCollection, setCurrentCollection] = useState('Trades');
   const [saveInputText, setSaveInputText] = useState('');
-  const [visibleCollection, setVisibleCollection] = useState({})
-  const [filteredCards, setFilteredCards] = useState({});
+  const [visibleCollection, setVisibleCollection] = useState(allCards)
+  const [filteredCards, setFilteredCards] = useState(allCards);
   const [selectedCollectionText, setSelectedCollectionText] = useState('');
   const [showCollectionState, setShowCollectionState] = useState(VisibilityState.ALL_CARDS);
   const [showExportScreen, setShowExportScreen] = useState(false);
-  const [cardFilterText, setCardFilterText] = useState('');
+  const [cardNameFilterText, setCardFilterText] = useState('');
+  const [onlyAlts, setOnlyAlts] = useState(false);
+  const [noAlts, setNoAlts] = useState(false);
+  const [addCardsBulkInputText, setAddCardsBulkInputText] = useState(0);
   const compRef = React.createRef();
+  const [uniqueSets, _] = useState(['', ...Object.values(allSets).filter(x => x != 'LP')]);
+  const [selectedSet, setSelectedSet] = useState('');
+  const [collectionNameDropdownOption, setCollectionNameDropdownOption] = useState({});
 
-  useEffect(() => toggleShowCards(showCollectionState), [allCards])
+  useEffect(() => {
+    toggleShowCards(showCollectionState);
+    getCollection(currentCollection);
+  }, [allCards]);
+
+  useEffect(() => { filterCards(filteredCards) }, [showCollectionState])
 
   // Add to the amount of specified card id
-  function addToCard(cardId) {
+  function addToCard(cardId, qty = 1) {
+    const qtyAsNumber = Number(qty);
     if (collection[cardId] == null) {
       collection[cardId] = 0;
     }
 
-    collection[cardId]++;
-    allCards[cardId].amount++
+    collection[cardId] += qtyAsNumber;
+    allCards[cardId].amount += qtyAsNumber;
     setCollection({ ...collection })
     toggleShowCards(showCollectionState)
-    // saveLocalStorage('collection', collection);
   }
 
   // Reduce the amount a specific cardId
@@ -87,41 +100,39 @@ function App() {
   // Toggle cards to show
   const toggleShowCards = (val) => {
     setShowCollectionState(val);
-    switch (val) {
-      case VisibilityState.ALL_CARDS: showAllCards(); break;
-      case VisibilityState.COLLECTED_CARDS: showCollectedCards(); break;
-      case VisibilityState.MISSING_CARDS: showOnlyMissingCards(); break;
+    filterCards(visibleCollection, onlyAlts, noAlts, val)
+  }
+
+  const toggleAlts = () => {
+    const showOnlyAlts = !onlyAlts;
+    let showNoAlts = noAlts;
+    setOnlyAlts(showOnlyAlts);
+    if (showOnlyAlts) {
+      showNoAlts = false;
+      setNoAlts(showNoAlts);
     }
+    console.log(`toggle Alts: noAlts: ${showNoAlts} - onlyAlts: ${showOnlyAlts}`)
+    filterCards(visibleCollection, showOnlyAlts, showNoAlts);
   }
 
-  // Show all cards
-  function showAllCards() {
-    setVisibleCollection(allCards);
-    filterCards(cardFilterText, allCards)
-  }
-
-  // Only show collected cards
-  const showCollectedCards = () => {
-    setVisibleCollection(getCollectedCards());
-    filterCards(cardFilterText, getCollectedCards());
-  }
-
-  // Only show missing cards
-  const showOnlyMissingCards = () => {
-    const col = {};
-    Object.values(allCards)
-      .filter(card => !collection[card.parallelId] || collection[card.parallelId] === 0)
-      .map(card => col[card.parallelId] = card);
-    setVisibleCollection(col);
-    filterCards(cardFilterText, col);
+  const toggleNoAlts = () => {
+    const showNoAlts = !noAlts;
+    let showOnlyAlts = onlyAlts;
+    setNoAlts(showNoAlts);
+    if (showNoAlts) {
+      showOnlyAlts = false;
+      setOnlyAlts(showOnlyAlts);
+    }
+    console.log(`toggle No Alts: noAlts: ${showNoAlts} - onlyAlts: ${showOnlyAlts}`)
+    filterCards(visibleCollection, showOnlyAlts, showNoAlts)
   }
 
   const getCollectedCards = () => {
-    const col = {};
+    let col = {};
     Object.values(allCards)
-      .filter(card => collection[card.parallelId] && collection[card.parallelId] !== 0)
+      .filter(card => collection[card.parallelId] && collection[card.parallelId] !== '')
       .map(card => col[card.parallelId] = card);
-    defaultSort(col);
+    col = defaultSort(col, 'parallelId');
     return col;
   }
 
@@ -130,6 +141,7 @@ function App() {
   const saveCollection = () => {
     saveLocalStorage(saveInputText, collection);
     setSelectedCollectionText(saveInputText);
+    setCollectionNameDropdownOption({ value: saveInputText, label: saveInputText })
   }
 
   // Save collection with key
@@ -144,25 +156,52 @@ function App() {
 
   function exportCards() {
     const collectionKeys = Object.keys(collection);
-    const val = collectionKeys.map(x => `${allCards[x].name} ${x} x ${collection[x]}`);
+    const val = collectionKeys.map(x => `${filteredCards[x].name} ${x} x ${collection[x]}`);
     navigator.clipboard.writeText(val.join('\n'));
     setShowExportScreen(true);
     exportComponentAsPNG(compRef, { fileName: currentCollection });
   }
 
-  // const getExportedCardsComponent = () => {
-  //   return (
-
-  // }
-
   function clearCollection() {
     setCollection({})
   }
 
-  function filterCards(val, col) {
-    setCardFilterText(val);
-    const cards = filterCardsByName(col ?? visibleCollection, val);
+  useEffect(() => {
+    filterCards(visibleCollection, onlyAlts, noAlts)
+  }, [selectedSet, cardNameFilterText]);
+
+  function filterCards(col, showOnlyAlts = onlyAlts, showNoAlts = noAlts, collectionState = showCollectionState) {
+    // setCardFilterText(val);
+    console.log(`filter cards: onlyAlts: ${showOnlyAlts} - noAlts: ${showNoAlts}`)
+    let cards = filterCardsByName(col ?? visibleCollection,
+      collection,
+      {
+        'name': cardNameFilterText,
+        'cardSetCode': selectedSet,
+      }, showOnlyAlts,
+      showNoAlts,
+      collectionState === VisibilityState.COLLECTED_CARDS,
+      collectionState === VisibilityState.MISSING_CARDS,
+    );
+    // const cardObjects = Object.values(cards)
+    // cardObjects.sort(sortCards);
+    // const sortedCards = {};
+    // cardObjects.map(x => sortedCards[x.parallelId] = x);
+    // setFilteredCards(sortedCards);
     setFilteredCards(cards);
+  }
+
+  function addCardsBulk() {
+    const cardIds = Object.keys(filteredCards);
+    cardIds.forEach(cardId => addToCard(cardId, addCardsBulkInputText));
+  }
+
+  function deleteCollection() {
+    clearCollection();
+    delete localStorage[currentCollection];
+    setCurrentCollection('')
+    setSaveInputText('');
+    setCollectionNameDropdownOption({});
   }
 
   return (
@@ -205,31 +244,56 @@ function App() {
       <div>
         <button onClick={() => setShowControls(!showControls)}>Toggle controls</button>
         <div>
-          <input value={saveInputText} onChange={event => setSaveInputText(event.target.value)} type='text' />
+          <div>
+            <span>Collection Name: </span>
+            <input value={saveInputText} onChange={event => setSaveInputText(event.target.value)} type='text' />
+          </div>
           <button onClick={() => saveCollection()}>Save</button>
+          <button onClick={() => deleteCollection()}>Delete</button>
+          <button onClick={() => clearCollection()}>Clear</button>
+          <button onClick={() => exportCards()}>Export to PNG</button>
         </div>
-        <div>
+        <div className='dropdownRow'>
+          <span>Collection: </span>
           <Select
-            className='collectionNameDropdown'
-            onChange={(value, _) => setCurrentCollection(value.value)}
+            className='collectionNameDropdown dropdownRowElement'
+            onChange={(value, _) => {
+              setCurrentCollection(value.value)
+              setCollectionNameDropdownOption(value);
+            }}
+            value={collectionNameDropdownOption}
             options={Object.keys(localStorage).filter(x => x !== 'debug').map(x => { return { value: x, label: x } })}
             defaultValue={{ value: currentCollection, label: currentCollection }}
           />
-          {/* <select value={selectedCollectionText} onChange={evt => setCurrentCollection(evt.target.value)} >
-            {Object.keys(localStorage).filter(x => x !== 'debug').map(x => <option selected={x === currentCollection} key={x} value={x}>{x}</option>)}
-          </select> */}
-          <button onClick={() => { getCollection(currentCollection) }}>Load</button>
+
+          <button className='dropdownRowElement' onClick={() => { getCollection(currentCollection); }}>Load Collection</button>
         </div>
         <div>
-          <span>Filters: </span>
-          <input value={cardFilterText} onChange={event => filterCards(event.target.value)} type='text' />
+          <span>Filter by name: </span>
+          <input value={cardNameFilterText} onChange={event => setCardFilterText(event.target.value)} type='text' />
         </div>
         <div>
-          <button onClick={() => toggleShowCards(VisibilityState.ALL_CARDS)}>Show all cards</button>
-          <button onClick={() => toggleShowCards(VisibilityState.COLLECTED_CARDS)}>Show collected cards</button>
-          <button onClick={() => toggleShowCards(VisibilityState.MISSING_CARDS)}>Show missing cards</button>
-          <button onClick={() => exportCards()}>Export</button>
-          <button onClick={() => clearCollection()}>Clear</button>
+          <button className={showCollectionState === VisibilityState.ALL_CARDS ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleShowCards(VisibilityState.ALL_CARDS)}>Show all cards</button>
+          <button className={showCollectionState === VisibilityState.COLLECTED_CARDS ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleShowCards(VisibilityState.COLLECTED_CARDS)}>Show collected cards</button>
+          <button className={showCollectionState === VisibilityState.MISSING_CARDS ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleShowCards(VisibilityState.MISSING_CARDS)}>Show missing cards</button>
+          <button className={onlyAlts ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleAlts()}>Toggle Alts</button>
+          <button className={noAlts ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleNoAlts()}>No Alts</button>
+        </div>
+        <div>
+          <div>
+            <span><span>Add </span><input value={addCardsBulkInputText} onChange={event => setAddCardsBulkInputText(event.target.value)} /><span> of each card
+            </span> </span>
+            <button onClick={() => addCardsBulk()}>Add</button>
+          </div>
+        </div>
+        <div className='dropdownRow'>
+          <span>Set: </span>
+          <Select
+            className='collectionNameDropdown dropdownRowElement'
+            onChange={(value, _) => setSelectedSet(value.value)}
+            options={uniqueSets.map(x => { return { value: x, label: x } })}
+            defaultValue={{ value: selectedSet, label: selectedSet }}
+          />
         </div>
         <CardMatrix
           cardAmount={collection}
@@ -243,7 +307,7 @@ function App() {
           cardsData={getCollectedCards()}
         />
 
-      </div>
+      </div >
     </>
   )
 }

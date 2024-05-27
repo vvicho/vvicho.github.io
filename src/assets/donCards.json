@@ -1,0 +1,177 @@
+{
+    "SPR": {
+        "parallelId": "SPR",
+        "name": "SPR",
+        "cardSetCode": "DON"
+    },
+    "ST-regular": {
+        "parallelId": "ST-regular",
+        "name": "ST-regular",
+        "cardSetCode": "DON"
+    },
+    "ST-foil": {
+        "parallelId": "ST-foil",
+        "name": "ST-foil",
+        "cardSetCode": "DON"
+    },
+    "OP01": {
+        "parallelId": "OP01",
+        "name": "OP01",
+        "cardSetCode": "DON"
+    },
+    "OP02": {
+        "parallelId": "OP02",
+        "name": "OP02",
+        "cardSetCode": "DON"
+    },
+    "OP03": {
+        "parallelId": "OP03",
+        "name": "OP03",
+        "cardSetCode": "DON"
+    },
+    "OP04": {
+        "parallelId": "OP04",
+        "name": "OP04",
+        "cardSetCode": "DON"
+    },
+    "OP05": {
+        "parallelId": "OP05",
+        "name": "OP05",
+        "cardSetCode": "DON"
+    },
+    "OP06": {
+        "parallelId": "OP06",
+        "name": "OP06",
+        "cardSetCode": "DON"
+    },
+    "TP-blackDon": {
+        "parallelId": "TP-blackDon",
+        "name": "TP-blackDon",
+        "cardSetCode": "DON"
+    },
+    "TP-blackDonWinner": {
+        "parallelId": "TP-blackDonWinner",
+        "name": "TP-blackDonWinner",
+        "cardSetCode": "DON"
+    },
+    "TP-blackDonChampionship": {
+        "parallelId": "TP-blackDonChampionship",
+        "name": "TP-blackDonChampionship",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatRed": {
+        "parallelId": "REG-strawhatRed",
+        "name": "REG-strawhatRed",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatGreen": {
+        "parallelId": "REG-strawhatGreen",
+        "name": "REG-strawhatGreen",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatBlue": {
+        "parallelId": "REG-strawhatBlue",
+        "name": "REG-strawhatBlue",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatOrange": {
+        "parallelId": "REG-strawhatOrange",
+        "name": "REG-strawhatOrange",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatTeal": {
+        "parallelId": "REG-strawhatTeal",
+        "name": "REG-strawhatTeal",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatPink": {
+        "parallelId": "REG-strawhatPink",
+        "name": "REG-strawhatPink",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatPurple": {
+        "parallelId": "REG-strawhatPurple",
+        "name": "REG-strawhatPurple",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatYellow": {
+        "parallelId": "REG-strawhatYellow",
+        "name": "REG-strawhatYellow",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatBronze": {
+        "parallelId": "REG-strawhatBronze",
+        "name": "REG-strawhatBronze",
+        "cardSetCode": "DON"
+    },
+    "REG-strawhatSilver": {
+        "parallelId": "REG-strawhatSilver",
+        "name": "REG-strawhatSilver",
+        "cardSetCode": "DON"
+    },
+    "REG-g5Luffy": {
+        "parallelId": "REG-g5Luffy",
+        "name": "REG-g5Luffy",
+        "cardSetCode": "DON"
+    },
+    "REG-whiteGold": {
+        "parallelId": "REG-whiteGold",
+        "name": "REG-whiteGold",
+        "cardSetCode": "DON"
+    },
+    "REG-3d": {
+        "parallelId": "REG-3d",
+        "name": "REG-3d",
+        "cardSetCode": "DON"
+    },
+    "DP01-corazon": {
+        "parallelId": "DP01-corazon",
+        "name": "DP01-corazon",
+        "cardSetCode": "DON"
+    },
+    "DP01-crocodile": {
+        "parallelId": "DP01-crocodile",
+        "name": "DP01-crocodile",
+        "cardSetCode": "DON"
+    },
+    "DP02-luffySilhouette": {
+        "parallelId": "DP02-luffySilhouette",
+        "name": "DP02-luffySilhouette",
+        "cardSetCode": "DON"
+    },
+    "DP02-luffyVsYonko": {
+        "parallelId": "DP02-luffyYonko",
+        "name": "DP02-luffyVsYonko",
+        "cardSetCode": "DON"
+    },
+    "DP03-zoro": {
+        "parallelId": "DP03-zoro",
+        "name": "DP03-zoro",
+        "cardSetCode": "DON"
+    },
+    "DP03-sanji": {
+        "parallelId": "DP03-sanji",
+        "name": "DP03-sanji",
+        "cardSetCode": "DON"
+    },
+    "DF01-kidLuffy": {
+        "parallelId": "DF01-kidLuffy",
+        "name": "DF01-kidLuffy",
+        "cardSetCode": "DON"
+    },
+    "DF01-luffyVsCrocodile": {
+        "parallelId": "DF01-luffyVsCrocodile",
+        "name": "DF01-luffyVsCrocodile",
+        "cardSetCode": "DON"
+    },
+    "ANNI1-luffy": {
+        "parallelId": "ANNI1-luffy",
+        "name": "ANNI1-luffy",
+        "cardSetCode": "DON"
+    },
+    "ANNI1-yamato": {
+        "parallelId": "ANNI1-yamato",
+        "name": "ANNI1-yamato",
+        "cardSetCode": "DON"
+    }
+}

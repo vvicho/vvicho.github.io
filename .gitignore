@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-src/assets/cards
+# src/assets/cards
 
 # Editor directories and files
 .vscode/*

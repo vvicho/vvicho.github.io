@@ -46,4 +46,34 @@
 
 .collectionNameDropdown {
   color: black;
+  width: 200px;
+  align-items: center;
+}
+
+
+.buttonActive {
+  background-color: darkgreen;
+  margin: 3px;
+  border-color: green;
+}
+
+.buttonInactive {
+  margin: 3px;
+  background-color: #222;
+  border-color: green;
+}
+
+.dropdownRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdownRowElement {
+  margin: 3px;
+}
+
+.filterButton {
+  margin: 3px;
 }

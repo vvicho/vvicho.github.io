@@ -6220,7 +6220,7 @@
     "cardType": "EVENT",
     "name": "You're the One Who Should Disappear.",
     "imageName": "OP06-115.png",
-    "cost": "-",
+    "cost": "0",
     "attribute": "",
     "power": "-",
     "counter": "-",
@@ -7847,7 +7847,7 @@
     "cardType": "EVENT",
     "name": "Because the Side of Justice Will Be Whichever Side Wins!!",
     "imageName": "OP05-037.png",
-    "cost": "-",
+    "cost": "0",
     "attribute": "",
     "power": "-",
     "counter": "-",
@@ -11388,7 +11388,7 @@
     "cardType": "EVENT",
     "name": "Bad Manners Kick Course",
     "imageName": "OP04-016.png",
-    "cost": "-",
+    "cost": "0",
     "attribute": "",
     "power": "-",
     "counter": "-",
@@ -17268,7 +17268,7 @@
     "cardType": "EVENT",
     "name": "Gum-Gum Jet Gatling",
     "imageName": "OP03-072.png",
-    "cost": "-",
+    "cost": "0",
     "attribute": "",
     "power": "-",
     "counter": "-",
@@ -18149,7 +18149,7 @@
     "cardType": "EVENT",
     "name": "Six King Pistol",
     "imageName": "OP03-097.png",
-    "cost": "-",
+    "cost": "0",
     "attribute": "",
     "power": "-",
     "counter": "-",
@@ -21601,7 +21601,7 @@
     "cardType": "EVENT",
     "name": "Gum-Gum Rain",
     "imageName": "OP02-068.png",
-    "cost": "-",
+    "cost": "0",
     "attribute": "",
     "power": "-",
     "counter": "-",
@@ -37815,5 +37815,178 @@
     "cardId": "ST01-010",
     "activation": null,
     "parallelId": "ST01-010_p1"
+  },
+  "OP01-041_p1": {
+    "id": "Kouzuki Momonosuke_OP01-041_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Kouzuki Momonosuke",
+    "imageName": "OP01-041_p1.png",
+    "cost": "1",
+    "attribute": "Slash",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano",
+      "Kouzuki Clan"
+    ],
+    "text": "[Activate: Main] ➀ (You may rest the specified number of DON!! cards in your cost area) You may rest this Character: Look at 5 cards from the top of your deck; reveal up to 1 {Land of Wano} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "Tournament Pack Vol.7",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP01-041_p1.png",
+    "cardSetCode": "OP01",
+    "cardId": "OP01-041",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP01-041_p1"
+  },
+  "OP05-106_p1": {
+    "id": "Shura_OP05-106_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Shura",
+    "imageName": "OP05-106_p1.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "Trigger Play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Sky Island",
+      "Vassals"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Sky Island} type card other than [Shura] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "Tournament Pack Vol.7",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP05-106_p1.png",
+    "cardSetCode": "OP05",
+    "cardId": "OP05-106",
+    "activation": [
+      "On Play",
+      "Shura"
+    ],
+    "parallelId": "OP05-106_p1"
+  },
+  "P-017_p1": {
+    "id": "Trafalgar Law_P-017_p1",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Trafalgar Law",
+    "imageName": "P-017_p1.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Supernovas",
+      "Heart Pirates"
+    ],
+    "text": "[On Play] Give up to 1 of your opponent's Characters －2000 power during this turn.",
+    "cardSet": "Tournament Pack Vol.7",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-017_p1.png",
+    "cardSetCode": "P",
+    "cardId": "P-017",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "P-017_p1"
+  },
+  "P-019_p1": {
+    "id": "Bepo_P-019_p1",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Bepo",
+    "imageName": "P-019_p1.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "2000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Minks",
+      "Heart Pirates"
+    ],
+    "text": "[DON!! x1] [When Attacking] K.O. up to 1 of your opponent's Characters with 3000 power or less.",
+    "cardSet": "Tournament Pack Vol.7",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-019_p1.png",
+    "cardSetCode": "P",
+    "cardId": "P-019",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "P-019_p1"
+  },
+  "P-068": {
+    "id": "Sanji_P-068",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Sanji",
+    "imageName": "P-068.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "4000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Kingdom of GERMA",
+      "The Vinsmoke Family"
+    ],
+    "text": "[Activate: Main] You may trash this Character: Look at 5 cards from the top of your deck and place them at the top or bottom of the deck in any order.",
+    "cardSet": "Pirates Party Vol.7",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-068.png",
+    "cardSetCode": "P",
+    "cardId": "P-068",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "P-068"
+  },
+  "P-076": {
+    "id": "Sakazuki_P-076",
+    "rarity": "P",
+    "cardType": "LEADER",
+    "name": "Sakazuki",
+    "imageName": "P-076.png",
+    "cost": "4",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue",
+      "Black"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] You may trash 1 {Navy} type card from your hand: Give up to 1 of your opponent's Characters －1 cost during this turn.",
+    "cardSet": "Pirates Party Vol.7",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-076.png",
+    "cardSetCode": "P",
+    "cardId": "P-076",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "P-076"
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./Card";
 import '../styles/CardMatrix.css';
 import CardWithControls from "./CardWithControls";
 

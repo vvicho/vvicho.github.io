@@ -8,6 +8,7 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 import request from 'request';
 import missingCardImages from '../assets/missingCardImages.json' assert {type: 'json'};
+import downloadedSets from '../assets/sets.json' assert {type: 'json'};
 
 
 const GLB_BASE_URL = "https://en.onepiece-cardgame.com";
@@ -15,36 +16,79 @@ const IMAGE_SAVE_PATH = 'src/assets/cards';
 const CARD_LIST_PATH = '/assets/sets.json'
 
 
-const run = async (url, lang) => {
-    console.log(`getSeries sart`)
+const run = async (url, lang, partialRun = false, force = false) => {
+    const sets = {};
+    console.log(`getSeries start`)
     const series = await getSeries(url);
     console.log(series);
-    console.log(`getSeries end`)
+    console.log(`getSeries end`);
     const newCards = {};
-    for (var seriesId of series) {
+    const missingImages = {};
+    missingCardImages.missingCards?.map(id => missingImages[id] = '');
+    for (var seriesId of Object.keys(series)) {
         console.log(`getCardsFromSeries ${seriesId} start`);
         let cards = await getCardsFromSeries(seriesId, url, lang);
         console.log(`getCardsForSeries ${seriesId} end`)
         for (let i = 0; i < cards.length; i++) {
             const card = cards[i];
-            console.log(`processing card ${card.parallelId}`);
-            if (allCards[card.parallelId]) {
-                console.log(`card ${card.parallelId} already in allcards`)
+            sets[seriesId] = series[seriesId];
+            if (downloadedSets[series[seriesId]] != null && partialRun) {
+                console.log(`skip set ${card.cardSetCode}`);
                 continue;
-            } else {
+            }
+            console.log(`processing card ${card.parallelId}`);
+            if (!allCards[card.parallelId] || force === true) {
+                console.log(`new card ${card.parallelId}`)
                 newCards[card.parallelId] = card;
                 allCards[card.parallelId] = card;
             }
+
+            if (missingCardImages &&
+                missingCardImages.missingCards &&
+                missingCardImages.missingCards.indexOf(card.cardId) >= 0
+            ) {
+                console.log(`--- missing image ${card.parallelId}`);
+                missingImages[card.parallelId] = card;
+            }
         }
     }
+
     // download images for new cards
-    await downloadImagesInBatches(newCards);
-    fs.writeFile('src/assets/allCards.json', JSON.stringify(allCards, null, 2), x => console.log(`finalized writing file ${x}`));
+    console.log('download newCards');
+    console.log(newCards);
+    if (newCards && newCards != {}) {
+        // overwrite allCards json
+        await downloadImagesInBatches(newCards);
+        fs.writeFile(
+            'src/assets/allCards.json',
+            JSON.stringify(allCards, null, 2),
+            x => console.log(`finalized writing file allCards ${x}`)
+        );
+    }
+    console.log('download missing images')
+    // console.log(missingImages);
+    if (missingImages && missingImages != {}) {
+        await downloadImagesInBatches(missingImages);
+        // overwrite missingImages json
+        fs.writeFile(
+            'src/assets/missingCardImages.json',
+            JSON.stringify({ missingCards: [] }, null, 2),
+            x => console.log(`finalized writing file missingImages \n${x}`)
+        );
+    }
+    sets['DON'] = 'DON';
+
+    fs.writeFile(
+        'src/assets/sets.json',
+        JSON.stringify(sets, null, 2),
+        x => console.log(`finalized writing file sets \n${x}`)
+    );
 }
 
 const downloadImagesInBatches = async cards => {
     let ids = Object.keys(cards);
-    ids = ids.sort()
+    console.log(ids);
+    // ids = ids.sort()
     const sliceIntoChunks = (arr, chunkSize) => {
         const newArr = [];
         while (arr.length) {
@@ -84,17 +128,19 @@ const getSeries = async (url) => {
     const $ = cheerioLoad(response.data);
     const seriesSelector = $('#series');
     const options = seriesSelector.find('option');
-    const seriesArr = [];
+    const seriesMap = {};
     options.each((_, ref) => {
         const elem = $(ref);
+        console.log(elem.contents().first().text());
         const seriesId = elem.attr('value');
         if (seriesId === undefined || seriesId === '') return;
-        let seriesName = elem.text();
-        seriesName = seriesName.replace(/\<br.*\>/, "");
-        seriesArr.push(seriesId);
+        let seriesCode = elem.contents().first().text();
+        seriesCode = seriesCode.substring(seriesCode.indexOf('[') + 1, seriesCode.indexOf(']'));
+        seriesCode = seriesId === '569901' ? 'P' : seriesId === '569801' ? "LP" : seriesCode;
+        seriesMap[seriesId] = seriesCode;
     });
 
-    return seriesArr;
+    return seriesMap;
 }
 
 const getCardsFromSeries = async (seriesId, url, lang) => {
@@ -113,7 +159,7 @@ const getCardsFromSeries = async (seriesId, url, lang) => {
         const name = elem.find('.cardName').text();
         const fullImgUrl = elem.find('.frontCol').find('img').attr('src');
         const imgFile = fullImgUrl.substring(fullImgUrl.lastIndexOf('/') + 1, fullImgUrl.indexOf('?'));
-        const cost = elem.find('.cost').text().replace(/Life|Cost/, '');
+        let cost = elem.find('.cost').text().replace(/Life|Cost/, '');
         const attribute = elem.find('.attribute').find('i').text();
         const power = elem.find('.power').text().replace('Power', '');
         const counter = elem.find('.counter').text().replace('Counter', '');
@@ -125,6 +171,7 @@ const getCardsFromSeries = async (seriesId, url, lang) => {
         const activations = getActivations(text);
         const imgUrl = `${url}/images/cardlist/card/${imgFile}`;
         const parallelId = getParallelId(name, info[0], imgFile);
+        if (cost === '-' && info[2] === 'EVENT') { cost = '0' };
         const card = {
             id: `${name}_${parallelId}`, // generated card id (cardId+parallelNumber)
             rarity: info[1],
@@ -148,6 +195,7 @@ const getCardsFromSeries = async (seriesId, url, lang) => {
         };
 
         cards.push(card);
+        return;
     });
     return cards;
 }
@@ -170,6 +218,7 @@ const getParallelId = (name, id, imgUrl) => {
 }
 
 const download = async (card, callback) => {
+    console.log(card);
     console.log(`downloading ${card.parallelId}`);
     request.head(card.imageUrl, function (_a, _b, _c) {
         const directoryPath = path.join(path.resolve(), `${IMAGE_SAVE_PATH}/${card.cardSetCode}`);
@@ -181,39 +230,9 @@ const download = async (card, callback) => {
     });
 };
 
-const downloadMissingImages = async (url, lang) => {
-    console.log('- downloading missing images');
-    if (!missingCardImages.missingCards || missingCardImages.missingCards.length < 1) {
-        console.log('-- no missing card images');
-        return;
-    }
-    const cardsToDownload = {};
+// partialRunRun will run for not downloaded sets
+// await run(GLB_BASE_URL, 'en', partialRun = false);
+// force will download everything again (remember to compress pngs)
+// await run(GLB_BASE_URL, 'en', force = true);
 
-    const series = await getSeries(url);
-    for (var seriesId of series) {
-        console.log(`-- getCardsFromSeries ${seriesId} start`);
-        let cards = await getCardsFromSeries(seriesId, url, lang);
-
-        for (let i = 0; i < cards.length; i++) {
-            const card = cards[i];
-            if (missingCardImages.missingCards.indexOf(card.cardId) >= 0) {
-                // download card
-                console.log(`--- adding card ${card.parallelId} to downloads`);
-                cardsToDownload[card.parallelId] = card;
-            }
-        }
-    }
-
-    console.log(`- Cards to download: ${JSON.stringify(cardsToDownload, null, 2)}`);
-
-    await downloadImagesInBatches(cardsToDownload);
-
-    fs.writeFile(
-        'src/assets/missingCardImages.json',
-        JSON.stringify({ missingCards: [] }, null, 2),
-        x => console.log(`finalized writing file \n${x}`)
-    );
-}
-
-await run(GLB_BASE_URL, 'en');
-await downloadMissingImages(GLB_BASE_URL, 'en');
+await run(GLB_BASE_URL, 'en', true, false);
