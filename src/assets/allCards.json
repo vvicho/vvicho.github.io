@@ -29692,7 +29692,7 @@
       "Green"
     ],
     "category": [
-      "音楽",
+      "Music",
       "FILM"
     ],
     "text": "[Main] Set up to 1 of your [Uta] Leader as active.",
@@ -38099,5 +38099,261 @@
       "On Play"
     ],
     "parallelId": "P-043"
+  },
+  "ST11-003_p1": {
+    "id": "Backlight_ST11-003_p1",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "Backlight",
+    "imageName": "ST11-003_p1.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "[Main] If your Leader is [Uta], choose one:• Rest up to 1 of your opponent's Characters with a cost of 5 or less.• K.O. up to 1 of your opponent's rested Characters with a cost of 5 or less.",
+    "cardSet": "-Uta-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/03.png",
+    "cardSetCode": "ST11",
+    "cardId": "ST11-003",
+    "activation": [
+      "Main",
+      "Uta"
+    ],
+    "parallelId": "ST11-003_p1"
+  },
+  "ST11-004_p1": {
+    "id": "New Genesis_ST11-004_p1",
+    "rarity": "SR",
+    "cardType": "EVENT",
+    "name": "New Genesis",
+    "imageName": "ST11-004_p1.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "[Main] If your Leader is [Uta], look at 3 cards from the top of your deck; reveal up to 1 {FILM} type card other than [New Genesis] and add it to your hand. Then, place the rest at the bottom of your deck in any order and set up to 1 of your DON!! cards as active.",
+    "cardSet": "-Uta-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/01.png",
+    "cardSetCode": "ST11",
+    "cardId": "ST11-004",
+    "activation": [
+      "Main",
+      "Uta",
+      "New Genesis"
+    ],
+    "parallelId": "ST11-004_p1"
+  },
+  "ST11-005_p1": {
+    "id": "I'm invincible_ST11-005_p1",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "I'm invincible",
+    "imageName": "ST11-005_p1.png",
+    "cost": "3",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "[Main] Set up to 1 of your [Uta] Leader as active.",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/01.png",
+    "cardSetCode": "ST11",
+    "cardId": "ST11-005",
+    "activation": [
+      "Main",
+      "Uta"
+    ],
+    "parallelId": "ST11-005_p1"
+  },
+  "P-057": {
+    "id": "Fleeting Lullaby_P-057",
+    "rarity": "P",
+    "cardType": "EVENT",
+    "name": "Fleeting Lullaby",
+    "imageName": "P-057.png",
+    "cost": "3",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Activate this card's [Main] effect",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "[Main] If your leader is [Uta], up to 2 of your oppnent's rested characters with a cost of 4 or less will not become active in your opponent’s next Refresh Phase.",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/04.png",
+    "cardSetCode": "P",
+    "cardId": "P-057",
+    "activation": [
+      "Main",
+      "Uta"
+    ],
+    "parallelId": "P-057"
+  },
+  "P-059": {
+    "id": "The World's Continuation_P-059",
+    "rarity": "P",
+    "cardType": "EVENT",
+    "name": "The World's Continuation",
+    "imageName": "P-059.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "-",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "[Counter] If your leader is [Uta], you may return any number of Characters on your field to the owner's hand. Up to 1 of your Leader or Character cards gains +2000 power during this battle for every returned Character.",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/05.png",
+    "cardSetCode": "P",
+    "cardId": "P-059",
+    "activation": [
+      "Main",
+      "Uta"
+    ],
+    "parallelId": "P-059"
+  },
+  "P-060": {
+    "id": "Tot Musica_P-060",
+    "rarity": "P",
+    "cardType": "EVENT",
+    "name": "Tot Musica",
+    "imageName": "P-060.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "-",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "[Main] You may rest 1 of your [Uta] cards: Rest up to 2 of your opponent’s DON!! cards.",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/06.png",
+    "cardSetCode": "P",
+    "cardId": "P-060",
+    "activation": [
+      "Main",
+      "Uta"
+    ],
+    "parallelId": "P-060"
+  },
+  "P-058": {
+    "id": "Where the Wind Blows_P-058",
+    "rarity": "P",
+    "cardType": "EVENT",
+    "name": "Where the Wind Blows",
+    "imageName": "P-058.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "-",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Music",
+      "FILM"
+    ],
+    "text": "If your Leader is [Uta], set all your {FILM} type Characters as active at the end of this turn.",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/07.png",
+    "cardSetCode": "P",
+    "cardId": "P-058",
+    "activation": [
+      "Main",
+      "Uta"
+    ],
+    "parallelId": "P-058"
+  },
+  "P-061": {
+    "id": "Monkey.D.Luffy_P-061",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "P-061.png",
+    "cost": "8",
+    "attribute": "Strike",
+    "power": "10000",
+    "counter": "1000",
+    "trigger": "-",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Straw Hat Crew",
+      "FILM"
+    ],
+    "text": "",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/participation_pack/08.png",
+    "cardSetCode": "P",
+    "cardId": "P-061",
+    "activation": [],
+    "parallelId": "P-061"
+  },
+  "P-061_p1": {
+    "id": "Monkey.D.Luffy_P-061",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "P-061.png",
+    "cost": "8",
+    "attribute": "Strike",
+    "power": "10000",
+    "counter": "1000",
+    "trigger": "-",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Straw Hat Crew",
+      "FILM"
+    ],
+    "text": "",
+    "cardSet": "Promo",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/prize/P-061.png",
+    "cardSetCode": "P",
+    "cardId": "P-061",
+    "activation": [],
+    "parallelId": "P-061_p1"
   }
 }
