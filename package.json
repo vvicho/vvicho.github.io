@@ -11,7 +11,7 @@
     "cardScraper": "node src/scraper/globalCardScraper.js",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@stylexjs/stylex": "^0.5.1",
