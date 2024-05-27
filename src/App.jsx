@@ -91,7 +91,7 @@ function App() {
       return allCards;
     }
 
-    const result = loadDataWithKey(name)
+    const result = loadDataWithKey(name) ?? {};
     setCollection(result);
     setSaveInputText(name);
     return result;
