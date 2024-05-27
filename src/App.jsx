@@ -273,6 +273,8 @@ function App() {
           <button className={showCollectionState === VisibilityState.ALL_CARDS ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleShowCards(VisibilityState.ALL_CARDS)}>Show all cards</button>
           <button className={showCollectionState === VisibilityState.COLLECTED_CARDS ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleShowCards(VisibilityState.COLLECTED_CARDS)}>Show collected cards</button>
           <button className={showCollectionState === VisibilityState.MISSING_CARDS ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleShowCards(VisibilityState.MISSING_CARDS)}>Show missing cards</button>
+        </div>
+        <div>
           <button className={onlyAlts ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleAlts()}>Toggle Alts</button>
           <button className={noAlts ? 'buttonActive' : 'buttonInactive'} onClick={() => toggleNoAlts()}>No Alts</button>
         </div>

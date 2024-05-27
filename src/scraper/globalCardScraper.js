@@ -1,20 +1,14 @@
 import axios, { Axios } from 'axios'
 import { load as cheerioLoad } from 'cheerio';
-import client from 'https'
 import allCards from '../assets/allCards.json' assert {type: 'json'};
 import fs from 'fs';
-// import download from 'image-downloader'
 import path from 'path'
-import { fileURLToPath } from 'url';
 import request from 'request';
 import missingCardImages from '../assets/missingCardImages.json' assert {type: 'json'};
 import downloadedSets from '../assets/sets.json' assert {type: 'json'};
 
-
 const GLB_BASE_URL = "https://en.onepiece-cardgame.com";
-const IMAGE_SAVE_PATH = 'src/assets/cards';
-const CARD_LIST_PATH = '/assets/sets.json'
-
+const IMAGE_SAVE_PATH = 'public/cards';
 
 const run = async (url, lang, partialRun = false, force = false) => {
     const sets = {};

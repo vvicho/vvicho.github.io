@@ -3,7 +3,7 @@ import Card from "./Card";
 import '../styles/CardExportScreen.css';
 import CardWithControls from "./CardWithControls";
 
-const IMAGE_PATH = '/public/cards';
+const IMAGE_PATH = '/cards';
 
 export default class CardExportScreen extends React.Component {
     constructor(props) {
