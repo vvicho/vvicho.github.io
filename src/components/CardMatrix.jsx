@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/CardMatrix.css';
 import CardWithControls from "./CardWithControls";
 
-const IMAGE_PATH = '/public/cards';
+const IMAGE_PATH = '/cards';
 
 export default function CardMatrix({ cardAmount, cardsData, size, callback, showControls }) {
     return <div className="cardMatrixContainer">
