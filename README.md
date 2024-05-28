@@ -1,5 +1,5 @@
 # Install 
-yarn install
+`yarn install`
 
 # Scrape official page
 `yarn run cardScraper`
