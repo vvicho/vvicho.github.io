@@ -45,9 +45,10 @@
 }
 
 .collectionNameDropdown {
-  color: black;
+  color: white !important;
   width: 200px;
   align-items: center;
+  border-color: green;
 }
 
 
@@ -68,6 +69,30 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: white !important;
+
+  svg {
+    color: green;
+  }
+
+  fieldset {
+    :hover {
+      border-color: blue;
+    }
+
+    border-color: green
+  }
+
+  legend {
+    span {
+      color: green;
+    }
+  }
+
+  label {
+    color: white;
+    padding: 5px;
+  }
 }
 
 .dropdownRowElement {

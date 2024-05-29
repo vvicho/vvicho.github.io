@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Select from 'react-select';
+// import Select from 'react-select';
+import MenuItem from '@mui/material/MenuItem';
+import InputLabel from '@mui/material/InputLabel';
+import Select from '@mui/material/Select';
 import './App.css';
 import CardMatrix from './components/CardMatrix';
 import { loadObject, saveObject } from './utils/WriteReadBroker.js';
@@ -9,6 +12,7 @@ import allSets from '/src/assets/sets.json';
 import CardExportScreen from './components/CardExportScreen.jsx';
 import { exportComponentAsPNG } from 'react-component-export-image';
 import { defaultSort, filterCardsByName, sortCards } from './utils/SortAndFilters.js';
+
 
 function App() {
   const VisibilityState = {
@@ -139,7 +143,7 @@ function App() {
   const saveCollection = () => {
     saveLocalStorage(saveInputText, collection);
     setSelectedCollectionText(saveInputText);
-    setCollectionNameDropdownOption({ value: saveInputText, label: saveInputText })
+    setCollectionNameDropdownOption(saveInputText)
   }
 
   // Save collection with key
@@ -251,17 +255,24 @@ function App() {
           <button onClick={() => exportCards()}>Export to PNG</button>
         </div>
         <div className='dropdownRow'>
-          <span>Collection: </span>
+          <InputLabel id="card-set-label-id">Card Set</InputLabel>
           <Select
+            labelId='Collection'
+            label="Collection"
+            placeholder='Collection'
             className='collectionNameDropdown dropdownRowElement'
-            onChange={(value, _) => {
-              setCurrentCollection(value.value)
-              setCollectionNameDropdownOption(value);
-            }}
+            onChange={
+              event => {
+                setCurrentCollection(event.target.value)
+                setCollectionNameDropdownOption(event.target.value);
+              }
+            }
             value={collectionNameDropdownOption}
-            options={Object.keys(localStorage).filter(x => x !== 'debug').map(x => { return { value: x, label: x } })}
-            defaultValue={{ value: currentCollection, label: currentCollection }}
-          />
+          >
+            {
+              Object.keys(localStorage).filter(x => x !== 'debug').map(col => <MenuItem value={col}>{col}</MenuItem>)
+            }
+          </Select>
 
           <button className='dropdownRowElement' onClick={() => { getCollection(currentCollection); }}>Load Collection</button>
         </div>
@@ -286,13 +297,21 @@ function App() {
           </div>
         </div>
         <div className='dropdownRow'>
-          <span>Set: </span>
+          <InputLabel id="card-set-label-id">Card Set</InputLabel>
           <Select
+            labelId='card-set-label-id'
+            label='Card Set'
+            placeholder='Card Set'
+            value={selectedSet}
             className='collectionNameDropdown dropdownRowElement'
-            onChange={(value, _) => setSelectedSet(value.value)}
-            options={uniqueSets.map(x => { return { value: x, label: x } })}
-            defaultValue={{ value: selectedSet, label: selectedSet }}
-          />
+            onChange={event => setSelectedSet(event.target.value)}
+          >
+            {
+              uniqueSets.map(set =>
+                <MenuItem value={set}>{set}</MenuItem>
+              )
+            }
+          </Select>
         </div>
         <CardMatrix
           cardAmount={collection}
