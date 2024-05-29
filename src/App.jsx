@@ -255,9 +255,9 @@ function App() {
           <button onClick={() => exportCards()}>Export to PNG</button>
         </div>
         <div className='dropdownRow'>
-          <InputLabel id="card-set-label-id">Card Set</InputLabel>
+          <InputLabel id="collection-label-id">Collection</InputLabel>
           <Select
-            labelId='Collection'
+            labelId='collection-label-id'
             label="Collection"
             placeholder='Collection'
             className='collectionNameDropdown dropdownRowElement'
