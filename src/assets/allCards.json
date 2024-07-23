@@ -38355,5 +38355,5058 @@
     "cardId": "P-061",
     "activation": [],
     "parallelId": "P-061_p1"
+  },
+  "ST01-007_tp3w": {
+    "id": "Nami_ST01-007_tp3w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Nami [Winner]",
+    "imageName": "ST01-007_tp3w.png",
+    "cost": "1",
+    "attribute": "Special",
+    "power": "1000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "cardSet": "-Straw Hat Crew-NotesErrata Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST01-007_tp3w.png",
+    "cardSetCode": "ST01",
+    "cardId": "ST01-007",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "ST01-007_tp3w"
+  },
+  "ST06-006_tp4w": {
+    "id": "Tashigi_ST06-006_tp4w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Tashigi [Winner]",
+    "imageName": "ST06-006_tp4w.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[Activate: Main] You may rest this Character: Give up to 1 of your opponent's Characters −2 cost during this turn.",
+    "cardSet": "-Absolute Justice-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST06-006_tp4w.png",
+    "cardSetCode": "ST06",
+    "cardId": "ST06-006",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "ST06-006_tp4w"
+  },
+  "ST04-011_tp2w": {
+    "id": "Black Maria_ST04-011_tp2w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Black Maria [Winner]",
+    "imageName": "ST04-011_tp2w.png",
+    "cost": "2",
+    "attribute": "Special",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Animal Kingdom Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-Animal Kingdom Pirates-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST04-011_tp2w.png",
+    "cardSetCode": "ST04",
+    "cardId": "ST04-011",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "ST04-011_tp2w"
+  },
+  "ST04-010_tp3w": {
+    "id": "Who's.Who_ST04-010_tp3w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Who's.Who [TP3][Winner]",
+    "imageName": "ST04-010_tp3w.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "-",
+    "trigger": "Trigger Play this card.",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Animal Kingdom Pirates"
+    ],
+    "text": "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "cardSet": "-Animal Kingdom Pirates-NotesErrata Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST04-010_tp3w.png",
+    "cardSetCode": "ST04",
+    "cardId": "ST04-010_tp3w",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "ST04-010_tp3w"
+  },
+  "ST04-003_tp5w": {
+    "id": "Kaido_ST04-003_tp5w",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "Kaido [TP5][Winner]",
+    "imageName": "ST04-003_tp5w.png",
+    "cost": "9",
+    "attribute": "Strike",
+    "power": "10000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "The Four Emperors",
+      "Animal Kingdom Pirates"
+    ],
+    "text": "[On Play] DON!! −5 (You may return the specified number of DON!! cards from your field to your DON!! deck.): K.O. up to 1 of your opponent's Characters with a cost of 6 or less. This Character gains [Rush] during this turn.(This card can attack on the turn in which it is played.)",
+    "cardSet": "-PILLARS OF STRENGTH-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST04-003_tp5w.png",
+    "cardSetCode": "ST04",
+    "cardId": "ST04-003",
+    "activation": [
+      "On Play",
+      "Rush"
+    ],
+    "parallelId": "ST04-003_tp5w"
+  },
+  "ST03-007_tp3w": {
+    "id": "Sentomaru_ST03-007_tp3w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Sentomaru [TP3][Winner]",
+    "imageName": "ST03-007_tp3w.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[DON!! x1] [Activate: Main] [Once Per Turn] ➁ (You may rest the specified number of DON!! cards in your cost area.): Play up to 1 [Pacifista] with a cost of 4 or less from your deck, then shuffle your deck.",
+    "cardSet": "-The Seven Warlords of the Sea-NotesErrata Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST03-007_tp3w.png",
+    "cardSetCode": "ST03",
+    "cardId": "ST03-007",
+    "activation": [
+      "DON!! x1",
+      "Activate: Main",
+      "Once Per Turn",
+      "Pacifista"
+    ],
+    "parallelId": "ST03-007_tp3w"
+  },
+  "ST03-005_tp4w": {
+    "id": "Dracule Mihawk_ST03-005_tp4w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Dracule Mihawk [TP4][Winner]",
+    "imageName": "ST03-005_tp4w.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea"
+    ],
+    "text": "[DON!! x1] [When Attacking] Draw 2 cards and trash 2 cards from your hand.",
+    "cardSet": "-The Seven Warlords of the Sea-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST03-005_tp4w.png",
+    "cardSetCode": "ST03",
+    "cardId": "ST03-005",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "ST03-005_tp4w"
+  },
+  "ST03-003_tp5w": {
+    "id": "Crocodile_ST03-003_tp5w",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Crocodile [TP5][Winner]",
+    "imageName": "ST03-003_tp5w.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Baroque Works"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[DON!! x1] [On Block] Place up to 1 Character with a cost of 2 or less at the bottom of the owner's deck.",
+    "cardSet": "-The Seven Warlords of the Sea-NotesErrata Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST03-003_tp5w.png",
+    "cardSetCode": "ST03",
+    "cardId": "ST03-003",
+    "activation": [
+      "Blocker",
+      "DON!! x1",
+      "On Block"
+    ],
+    "parallelId": "ST03-003_tp5w"
+  },
+  "ST02-013_tp5w": {
+    "id": "Eustass\"Captain\"Kid_ST02-013_tp5w",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Eustass\"Captain\"Kid [TP5][Winner]",
+    "imageName": "ST02-013_tp5w.png",
+    "cost": "7",
+    "attribute": "Special",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Kid Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[DON!! x1] [End of Your Turn] Set this Character as active.",
+    "cardSet": "-Worst Generation-NotesErrata Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST02-013_tp5w.png",
+    "cardSetCode": "ST02",
+    "cardId": "ST02-013",
+    "activation": [
+      "Blocker",
+      "DON!! x1",
+      "End of Your Turn"
+    ],
+    "parallelId": "ST02-013_tp5w"
+  },
+  "ST02-007_tp3w": {
+    "id": "Jewelry Bonney_ST02-007_tp3w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Jewelry Bonney [TP3][Winner]",
+    "imageName": "ST02-007_tp3w.png",
+    "cost": "1",
+    "attribute": "Special",
+    "power": "1000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[Activate: Main] ➀ (You may rest the specified number of DON!! cards in your cost area.) You may rest this Character: Look at 5 cards from the top of your deck; reveal up to 1 {Supernovas} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-Worst Generation-NotesErrata Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST02-007_tp3w.png",
+    "cardSetCode": "ST02",
+    "cardId": "ST02-007",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "ST02-007_tp3w"
+  },
+  "ST01-012_tp5w": {
+    "id": "Monkey.D.Luffy_ST01-012_tp5w",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy [TP5][Winner]",
+    "imageName": "ST01-012_tp5w.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "text": "[Rush] (This card can attack on the turn in which it is played.)[DON!! x2] [When Attacking] Your opponent cannot activate [Blocker] during this battle.",
+    "cardSet": "-AWAKENING OF THE NEW ERA-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST01-012_tp5w.png",
+    "cardSetCode": "ST01",
+    "cardId": "ST01-012",
+    "activation": [
+      "Rush",
+      "DON!! x2",
+      "When Attacking",
+      "Blocker"
+    ],
+    "parallelId": "ST01-012_tp5w"
+  },
+  "ST01-011_tp4w": {
+    "id": "Brook_ST01-011_tp4w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Brook [TP4][Winner]",
+    "imageName": "ST01-011_tp4w.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[On Play] Give up to 2 rested DON!! cards to your Leader or 1 of your Characters.",
+    "cardSet": "-Straw Hat Crew-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST01-011_tp4w.png",
+    "cardSetCode": "ST01",
+    "cardId": "ST01-011",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "ST01-011_tp4w"
+  },
+  "ST01-009_pr3w": {
+    "id": "Nefeltari Vivi_ST01-009_pr3w",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Nefeltari Vivi [PreRelease][Winner]",
+    "imageName": "ST01-009_pr3w.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Alabasta"
+    ],
+    "text": "-",
+    "cardSet": "-Straw Hat Crew-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST01-009_pr3w.png",
+    "cardSetCode": "ST01",
+    "cardId": "ST01-009",
+    "activation": null,
+    "parallelId": "ST01-009_pr3w"
+  },
+  "P-045_pr6w": {
+    "id": "Roronoa Zoro_P-045_pr6w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Roronoa Zoro [PreRelease][Winner]",
+    "imageName": "P-045_pr6w.png",
+    "cost": "6",
+    "attribute": "Slash",
+    "power": "7000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "cardSet": "Pre-Release OP06",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-045_pr6w.png",
+    "cardSetCode": "P",
+    "cardId": "P-045",
+    "activation": [
+      "Banish"
+    ],
+    "parallelId": "P-045_pr6w"
+  },
+  "P-036_pr4w": {
+    "id": "Monkey.D.Luffy_P-036_pr4w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy [PreRelease][Winner]",
+    "imageName": "P-036_pr4w.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Land of Wano",
+      "Straw Hat Crew"
+    ],
+    "text": "[When Attacking] You may add 1 card from the top or bottom of your Life cards to your hand: This Character and up to 1 of your Leader gain +1000 power during this turn.",
+    "cardSet": "Pre-Release OP04",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-036_pr4w.png",
+    "cardSetCode": "P",
+    "cardId": "P-036",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "P-036_pr4w"
+  },
+  "P-025_pr2w": {
+    "id": "Smoker_P-025_pr2w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Smoker [PreRelease][Winner]",
+    "imageName": "P-025_pr2w.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[DON!! x1] This Character cannot be K.O.'d in battle by Characters without the <Special> attribute.",
+    "cardSet": "Pre-Release OP02",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-025_pr2w.png",
+    "cardSetCode": "P",
+    "cardId": "P-025",
+    "activation": [
+      "DON!! x1"
+    ],
+    "parallelId": "P-025_pr2w"
+  },
+  "P-010_tp1w": {
+    "id": "Kaido_P-010_tp1w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Kaido [TP1][Winner]",
+    "imageName": "P-010_tp1w.png",
+    "cost": "8",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "The Four Emperors",
+      "Animal Kingdom Pirates"
+    ],
+    "text": "[End of Your Turn] Add 1 DON!! card from your DON!! deck and set it as active.",
+    "cardSet": "Tournament Pack Vol.1",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-010_tp1w.png",
+    "cardSetCode": "P",
+    "cardId": "P-010",
+    "activation": [
+      "End of Your Turn"
+    ],
+    "parallelId": "P-010_tp1w"
+  },
+  "P-009_tp1w": {
+    "id": "Trafalgar Law_P-009_tp1w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Trafalgar Law [TP1][Winner]",
+    "imageName": "P-009_tp1w.png",
+    "cost": "6",
+    "attribute": "Slash",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Supernovas",
+      "Heart Pirates"
+    ],
+    "text": "[On Play] If your opponent has 6 or more cards in their hand, your opponent adds 1 card from their Life area to their hand.",
+    "cardSet": "Tournament Pack Vol.1",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-009_tp1w.png",
+    "cardSetCode": "P",
+    "cardId": "P-009",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "P-009_tp1w"
+  },
+  "P-008_tp1w": {
+    "id": "Yamato_P-008_tp1w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Yamato [TP1][Winner]",
+    "imageName": "P-008_tp1w.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano"
+    ],
+    "text": "[Activate: Main] You may rest this Character: Rest 1 of your opponent's Characters with a cost of 2 or less.",
+    "cardSet": "Tournament Pack Vol.1",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-008_tp1w.png",
+    "cardSetCode": "P",
+    "cardId": "P-008",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "P-008_tp1w"
+  },
+  "P-007_tp1w": {
+    "id": "Monkey.D.Luffy_P-007_tp1w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy [TP1][Winner]",
+    "imageName": "P-007_tp1w.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "text": "[DON!! x1] This Character cannot be K.O.'d in battle by ＜Strike＞ attribute Leaders or Characters.",
+    "cardSet": "Tournament Pack Vol.1",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-007_tp1w.png",
+    "cardSetCode": "P",
+    "cardId": "P-007",
+    "activation": [
+      "DON!! x1"
+    ],
+    "parallelId": "P-007_tp1w"
+  },
+  "P-006_tp1w": {
+    "id": "Monkey.D.Luffy_P-006_tp1w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy [TP1][Winner]",
+    "imageName": "P-006_tp1w.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "3000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "text": "[DON!! x2] [Your Turn] This Character gains +2000 power.",
+    "cardSet": "Tournament Pack Vol.1",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-006_tp1w.png",
+    "cardSetCode": "P",
+    "cardId": "P-006",
+    "activation": [
+      "DON!! x2",
+      "Your Turn"
+    ],
+    "parallelId": "P-006_tp1w"
+  },
+  "P-003_ch2w": {
+    "id": "Eustass\"Captain\"Kid_P-003_ch2w",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Eustass\"Captain\"Kid [StoreChampionship][Winner]",
+    "imageName": "P-003_ch2w.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Kid Pirates"
+    ],
+    "text": "[DON!! x2] This Character gains [Double Attack].(This card deals 2 damage.)",
+    "cardSet": "Included in Promotion Pack 2022",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-003_ch2w.png",
+    "cardSetCode": "P",
+    "cardId": "P-003",
+    "activation": [
+      "DON!! x2",
+      "Double Attack"
+    ],
+    "parallelId": "P-003_ch2w"
+  },
+  "OP03-116_tp6w": {
+    "id": "Shirahoshi_OP03-116_tp6w",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Shirahoshi [TP6][Winner]",
+    "imageName": "OP03-116_tp6w.png",
+    "cost": "5",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "Trigger Play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Merfolk"
+    ],
+    "text": "[On Play] Draw 3 cards and trash 2 cards from your hand.",
+    "cardSet": "-PILLARS OF STRENGTH-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-116_tp6w.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-116",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP03-116_tp6w"
+  },
+  "OP03-088_tp6w": {
+    "id": "Fukurou_OP03-088_tp6w",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Fukurou [TP6][Winner]",
+    "imageName": "OP03-088_tp6w.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP9"
+    ],
+    "text": "This Character cannot be K.O.'d by effects.[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-PILLARS OF STRENGTH-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-088_tp6w.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-088",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP03-088_tp6w"
+  },
+  "OP03-033_tp6w": {
+    "id": "Hatchan_OP03-033_tp6w",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Hatchan [TP6][Winner]",
+    "imageName": "OP03-033_tp6w.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "2000",
+    "trigger": "Trigger If your Leader has the {East Blue} type, play this card.",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Fish-Man",
+      "East Blue",
+      "Arlong Pirates"
+    ],
+    "text": "-",
+    "cardSet": "Tournament Pack Vol.6",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-033_tp6w.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-033",
+    "activation": null,
+    "parallelId": "OP03-033_tp6w"
+  },
+  "OP03-044_tp6w": {
+    "id": "Kaya_OP03-044_tp6w",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Kaya [TP6][Winner]",
+    "imageName": "OP03-044_tp6w.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "East Blue"
+    ],
+    "text": "[On Play] Draw 2 cards and trash 2 cards from your hand.",
+    "cardSet": "Tournament Pack Vol.6",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-044_tp6w.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-044",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP03-044_tp6w"
+  },
+  "OP01-035_tp4w": {
+    "id": "Okiku_OP01-035_tp4w",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Okiku [TP4][Winner]",
+    "imageName": "OP01-035_tp4w.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano",
+      "The Akazaya Nine"
+    ],
+    "text": "[DON!! x1] [When Attacking] [Once Per Turn] Rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "cardSet": "Tournament Pack Vol.4",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP01-035_tp4w.png",
+    "cardSetCode": "OP01",
+    "cardId": "OP01-035",
+    "activation": [
+      "DON!! x1",
+      "When Attacking",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP01-035_tp4w"
+  },
+  "OP01-033_tp2w": {
+    "id": "Izo_OP01-033_tp2w",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Izo [TP2][Winner]",
+    "imageName": "OP01-033_tp2w.png",
+    "cost": "3",
+    "attribute": "Ranged",
+    "power": "3000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano",
+      "Former Whitebeard Pirates"
+    ],
+    "text": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "cardSet": "Tournament Pack Vol.2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP01-033_tp2w.png",
+    "cardSetCode": "OP01",
+    "cardId": "OP01-033",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP01-033_tp2w"
+  },
+  "OP01-021_tp2w": {
+    "id": "Franky_OP01-021_tp2w",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Franky [TP2][Winner]",
+    "imageName": "OP01-021_tp2w.png",
+    "cost": "3",
+    "attribute": "Ranged",
+    "power": "4000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[DON!! x1] This Character can also attack your opponent's active Characters.",
+    "cardSet": "Premium Card Collection -FILM RED Edition-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP01-021_tp2w.png",
+    "cardSetCode": "OP01",
+    "cardId": "OP01-021",
+    "activation": [
+      "DON!! x1"
+    ],
+    "parallelId": "OP01-021_tp2w"
+  },
+  "OP01-035_p2": {
+    "id": "Okiku_OP01-035_p2",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "Okiku",
+    "imageName": "OP01-035_p2.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano",
+      "The Akazaya Nine"
+    ],
+    "text": "[DON!! x1] [When Attacking] [Once Per Turn] Rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP01-035_p2.png",
+    "cardSetCode": "OP01",
+    "cardId": "OP01-035",
+    "activation": [
+      "DON!! x1",
+      "When Attacking",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP01-035_p2"
+  },
+  "OP01-073_p2": {
+    "id": "Donquixote Doflamingo_OP01-073_p2",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "Donquixote Doflamingo",
+    "imageName": "OP01-073_p2.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Donquixote Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] Look at 5 cards from the top of your deck and place them at the top or bottom of the deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP01-073_p2.png",
+    "cardSetCode": "OP01",
+    "cardId": "OP01-073",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP01-073_p2"
+  },
+  "OP03-003_p1": {
+    "id": "Izo_OP03-003_p1",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "Izo",
+    "imageName": "OP03-003_p1.png",
+    "cost": "1",
+    "attribute": "Ranged",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Land of Wano",
+      "Whitebeard Pirates"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 card with a type including \"Whitebeard Pirates\" other than [Izo] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-003_p1.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-003",
+    "activation": [
+      "On Play",
+      "Izo"
+    ],
+    "parallelId": "OP03-003_p1"
+  },
+  "OP03-078_p2": {
+    "id": "Issho_OP03-078_p2",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "Issho",
+    "imageName": "OP03-078_p2.png",
+    "cost": "8",
+    "attribute": "Slash",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[DON!! x1] [Your Turn] Give all of your opponent's Characters −3 cost.[On Play] If your opponent has 6 or more cards in their hand, trash 2 cards from your opponent's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP03-078_p2.png",
+    "cardSetCode": "OP03",
+    "cardId": "OP03-078",
+    "activation": [
+      "DON!! x1",
+      "Your Turn",
+      "On Play"
+    ],
+    "parallelId": "OP03-078_p2"
+  },
+  "OP05-074_p3": {
+    "id": "Eustass\"Captain\"Kid_OP05-074_p3",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "Eustass\"Captain\"Kid",
+    "imageName": "OP05-074_p3.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Kid Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[Your Turn] [Once Per Turn] When a DON!! card on your field is returned to your DON!! deck, add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP05-074_p3.png",
+    "cardSetCode": "OP05",
+    "cardId": "OP05-074",
+    "activation": [
+      "Blocker",
+      "Your Turn",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP05-074_p3"
+  },
+  "OP06-101_p2": {
+    "id": "O-Nami_OP06-101_p2",
+    "rarity": "SP CARD",
+    "cardType": "CHARACTER",
+    "name": "O-Nami",
+    "imageName": "OP06-101_p2.png",
+    "cost": "2",
+    "attribute": "Special",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "Trigger K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[On Play] Up to 1 of your Leader or Character cards gains [Banish] during this turn.(When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP06-101_p2.png",
+    "cardSetCode": "OP06",
+    "cardId": "OP06-101",
+    "activation": [
+      "On Play",
+      "Banish"
+    ],
+    "parallelId": "OP06-101_p2"
+  },
+  "OP07-001": {
+    "id": "Monkey.D.Dragon_OP07-001",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Monkey.D.Dragon",
+    "imageName": "OP07-001.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] Give up to 2 total of your currently given DON!! cards to 1 of your Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-001.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-001",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-001"
+  },
+  "OP07-001_p1": {
+    "id": "Monkey.D.Dragon_OP07-001_p1",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Monkey.D.Dragon",
+    "imageName": "OP07-001_p1.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] Give up to 2 total of your currently given DON!! cards to 1 of your Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-001_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-001",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-001_p1"
+  },
+  "OP07-002": {
+    "id": "Ain_OP07-002",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Ain",
+    "imageName": "OP07-002.png",
+    "cost": "7",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Neo Navy"
+    ],
+    "text": "[On Play] Set the power of up to 1 of your opponent's Characters to 0 during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-002.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-002",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-002"
+  },
+  "OP07-003": {
+    "id": "Outlook III_OP07-003",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Outlook III",
+    "imageName": "OP07-003.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Goa Kingdom"
+    ],
+    "text": "[Activate: Main] You may trash this Character: Give up to 2 of your opponent's Characters −2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-003.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-003",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-003"
+  },
+  "OP07-004": {
+    "id": "Curly.Dadan_OP07-004",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Curly.Dadan",
+    "imageName": "OP07-004.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Mountain Bandits"
+    ],
+    "text": "[On Play] You may trash 1 card from your hand: Look at 5 cards from the top of your deck; reveal up to 1 Character card with 2000 power or less and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-004.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-004",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-004"
+  },
+  "OP07-005": {
+    "id": "Carina_OP07-005",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Carina",
+    "imageName": "OP07-005.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Grantesoro"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] Give up to 1 of your opponent's Characters −2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-005.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-005",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP07-005"
+  },
+  "OP07-005_p1": {
+    "id": "Carina_OP07-005_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Carina",
+    "imageName": "OP07-005_p1.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Grantesoro"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] Give up to 1 of your opponent's Characters −2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-005_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-005",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP07-005_p1"
+  },
+  "OP07-006": {
+    "id": "Sterry_OP07-006",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Sterry",
+    "imageName": "OP07-006.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "1000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Goa Kingdom"
+    ],
+    "text": "[On Play] You may give your 1 active Leader −5000 power during this turn: Draw 1 card and trash 1 card from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-006.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-006",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-006"
+  },
+  "OP07-007": {
+    "id": "Dice_OP07-007",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Dice",
+    "imageName": "OP07-007.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Grantesoro"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-007.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-007",
+    "activation": null,
+    "parallelId": "OP07-007"
+  },
+  "OP07-008": {
+    "id": "Mr. Tanaka_OP07-008",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Mr. Tanaka",
+    "imageName": "OP07-008.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "3000",
+    "counter": "-",
+    "trigger": "Trigger Play this card.",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Grantesoro"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-008.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-008",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP07-008"
+  },
+  "OP07-009": {
+    "id": "Dogura & Magura_OP07-009",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Dogura & Magura",
+    "imageName": "OP07-009.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Mountain Bandits"
+    ],
+    "text": "[On Play] Up to 1 of your red Characters with a cost of 1 gains [Double Attack] during this turn.(This card deals 2 damage.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-009.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-009",
+    "activation": [
+      "On Play",
+      "Double Attack"
+    ],
+    "parallelId": "OP07-009"
+  },
+  "OP07-010": {
+    "id": "Baccarat_OP07-010",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Baccarat",
+    "imageName": "OP07-010.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "FILM",
+      "Grantesoro"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Your Opponent's Attack] [Once Per Turn] You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +2000 power during this battle.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-010.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-010",
+    "activation": [
+      "Blocker",
+      "On Your Opponent's Attack",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-010"
+  },
+  "OP07-011": {
+    "id": "Bluejam_OP07-011",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Bluejam",
+    "imageName": "OP07-011.png",
+    "cost": "4",
+    "attribute": "Ranged",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Goa Kingdom",
+      "Bluejam Pirates"
+    ],
+    "text": "[DON!! x1] [When Attacking] K.O. up to 1 of your opponent's Characters with 2000 power or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-011.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-011",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "OP07-011"
+  },
+  "OP07-012": {
+    "id": "Porchemy_OP07-012",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Porchemy",
+    "imageName": "OP07-012.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Goa Kingdom",
+      "Bluejam Pirates"
+    ],
+    "text": "[On Play] Give up to 1 of your opponent's Characters −1000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-012.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-012",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-012"
+  },
+  "OP07-013": {
+    "id": "Masked Deuce_OP07-013",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Masked Deuce",
+    "imageName": "OP07-013.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Spade Pirates"
+    ],
+    "text": "[On Play] If your Leader is [Portgas.D.Ace], look at 5 cards from the top of your deck; reveal up to 1 [Portgas.D.Ace] or red Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-013.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-013",
+    "activation": [
+      "On Play",
+      "Portgas.D.Ace",
+      "Portgas.D.Ace"
+    ],
+    "parallelId": "OP07-013"
+  },
+  "OP07-014": {
+    "id": "Moda_OP07-014",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Moda",
+    "imageName": "OP07-014.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Lulucia Kingdom"
+    ],
+    "text": "[Your Turn] [On Play] Up to 1 of your [Portgas.D.Ace] cards gains +2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-014.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-014",
+    "activation": [
+      "Your Turn",
+      "On Play",
+      "Portgas.D.Ace"
+    ],
+    "parallelId": "OP07-014"
+  },
+  "OP07-015": {
+    "id": "Monkey.D.Dragon_OP07-015",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Dragon",
+    "imageName": "OP07-015.png",
+    "cost": "8",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Rush] (This card can attack on the turn in which it is played.)[On Play] Give up to 2 rested DON!! cards to your Leader or 1 of your Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-015.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-015",
+    "activation": [
+      "Rush",
+      "On Play"
+    ],
+    "parallelId": "OP07-015"
+  },
+  "OP07-015_p1": {
+    "id": "Monkey.D.Dragon_OP07-015_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Dragon",
+    "imageName": "OP07-015_p1.png",
+    "cost": "8",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Rush] (This card can attack on the turn in which it is played.)[On Play] Give up to 2 rested DON!! cards to your Leader or 1 of your Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-015_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-015",
+    "activation": [
+      "Rush",
+      "On Play"
+    ],
+    "parallelId": "OP07-015_p1"
+  },
+  "OP07-016": {
+    "id": "Galaxy Wink_OP07-016",
+    "rarity": "R",
+    "cardType": "EVENT",
+    "name": "Galaxy Wink",
+    "imageName": "OP07-016.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger effect.",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Main] Up to 1 of your {Revolutionary Army} type Characters gains +2000 power during this turn. Then, give up to 1 of your opponent's Characters −1000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-016.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-016",
+    "activation": [
+      "Main"
+    ],
+    "parallelId": "OP07-016"
+  },
+  "OP07-017": {
+    "id": "Dragon Breath_OP07-017",
+    "rarity": "UC",
+    "cardType": "EVENT",
+    "name": "Dragon Breath",
+    "imageName": "OP07-017.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger effect.",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Main] K.O. up to 1 of your opponent's Characters with 3000 power or less and up to 1 of your opponent's Stages with a cost of 1 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-017.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-017",
+    "activation": [
+      "Main"
+    ],
+    "parallelId": "OP07-017"
+  },
+  "OP07-018": {
+    "id": "KEEP OUT_OP07-018",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "KEEP OUT",
+    "imageName": "OP07-018.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger effect.",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Impel Down",
+      "Revolutionary Army"
+    ],
+    "text": "[Counter] Up to 1 of your {Revolutionary Army} type Characters gains +2000 power until the end of your next turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-018.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-018",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-018"
+  },
+  "OP07-019": {
+    "id": "Jewelry Bonney_OP07-019",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP07-019.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[On Your Opponent's Attack] [Once Per Turn] ➀ (You may rest the specified number of DON!! cards in your cost area.): Rest up to 1 of your opponent's Leader or Character cards.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-019.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-019",
+    "activation": [
+      "On Your Opponent's Attack",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-019"
+  },
+  "OP07-019_p1": {
+    "id": "Jewelry Bonney_OP07-019_p1",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP07-019_p1.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[On Your Opponent's Attack] [Once Per Turn] ➀ (You may rest the specified number of DON!! cards in your cost area.): Rest up to 1 of your opponent's Leader or Character cards.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-019_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-019",
+    "activation": [
+      "On Your Opponent's Attack",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-019_p1"
+  },
+  "OP07-020": {
+    "id": "Aladine_OP07-020",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Aladine",
+    "imageName": "OP07-020.png",
+    "cost": "5",
+    "attribute": "Slash",
+    "power": "6000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Merfolk",
+      "The Sun Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On K.O.] If your Leader has the {Fish-Man} type, play up to 1 {Fish-Man} or {Merfolk} type Character card with a cost of 3 or less from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-020.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-020",
+    "activation": [
+      "Blocker",
+      "On K.O."
+    ],
+    "parallelId": "OP07-020"
+  },
+  "OP07-021": {
+    "id": "Urouge_OP07-021",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Urouge",
+    "imageName": "OP07-021.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Fallen Monk Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[End of Your Turn] Set up to 1 of your DON!! cards as active.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-021.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-021",
+    "activation": [
+      "Blocker",
+      "End of Your Turn"
+    ],
+    "parallelId": "OP07-021"
+  },
+  "OP07-022": {
+    "id": "Otama_OP07-022",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Otama",
+    "imageName": "OP07-022.png",
+    "cost": "1",
+    "attribute": "Special",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 green {Land of Wano} type card other than [Otama] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-022.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-022",
+    "activation": [
+      "On Play",
+      "Otama"
+    ],
+    "parallelId": "OP07-022"
+  },
+  "OP07-022_p1": {
+    "id": "Otama_OP07-022_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Otama",
+    "imageName": "OP07-022_p1.png",
+    "cost": "1",
+    "attribute": "Special",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Land of Wano"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 green {Land of Wano} type card other than [Otama] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-022_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-022",
+    "activation": [
+      "On Play",
+      "Otama"
+    ],
+    "parallelId": "OP07-022_p1"
+  },
+  "OP07-023": {
+    "id": "Caribou_OP07-023",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Caribou",
+    "imageName": "OP07-023.png",
+    "cost": "4",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Caribou Pirates"
+    ],
+    "text": "If you have 6 or more rested DON!! cards, this Character gains +1000 power.[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-023.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-023",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP07-023"
+  },
+  "OP07-024": {
+    "id": "Koala_OP07-024",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Koala",
+    "imageName": "OP07-024.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Foolshout Island"
+    ],
+    "text": "[On Your Opponent's Attack] You may rest this Character: Up to 1 of your {Fish-Man} type Characters with a cost of 5 or less gains [Blocker] during this turn.(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-024.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-024",
+    "activation": [
+      "On Your Opponent's Attack",
+      "Blocker"
+    ],
+    "parallelId": "OP07-024"
+  },
+  "OP07-025": {
+    "id": "Coribou_OP07-025",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Coribou",
+    "imageName": "OP07-025.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "3000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Caribou Pirates"
+    ],
+    "text": "[On Play] Play up to 1 [Caribou] with a cost of 4 or less from your hand rested.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-025.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-025",
+    "activation": [
+      "On Play",
+      "Caribou"
+    ],
+    "parallelId": "OP07-025"
+  },
+  "OP07-026": {
+    "id": "Jewelry Bonney_OP07-026",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP07-026.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[On Play] Up to 1 of your opponent's rested Character or DON!! cards will not become active in your opponent's next Refresh Phase.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-026.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-026",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-026"
+  },
+  "OP07-026_p1": {
+    "id": "Jewelry Bonney_OP07-026_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP07-026_p1.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[On Play] Up to 1 of your opponent's rested Character or DON!! cards will not become active in your opponent's next Refresh Phase.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-026_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-026",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-026_p1"
+  },
+  "OP07-027": {
+    "id": "Jinbe_OP07-027",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Jinbe",
+    "imageName": "OP07-027.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Fish-Man",
+      "The Sun Pirates"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-027.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-027",
+    "activation": null,
+    "parallelId": "OP07-027"
+  },
+  "OP07-028": {
+    "id": "Scratchmen Apoo_OP07-028",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Scratchmen Apoo",
+    "imageName": "OP07-028.png",
+    "cost": "6",
+    "attribute": "Ranged",
+    "power": "8000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "On-Air Pirates"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-028.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-028",
+    "activation": null,
+    "parallelId": "OP07-028"
+  },
+  "OP07-029": {
+    "id": "Basil Hawkins_OP07-029",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Basil Hawkins",
+    "imageName": "OP07-029.png",
+    "cost": "6",
+    "attribute": "Slash",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Hawkins Pirates"
+    ],
+    "text": "If your Leader has the {Supernovas} type, this Character gains [Blocker].(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[Once Per Turn] If this Character would be removed from the field by your opponent's effect, you may rest 1 of your opponent's Characters instead.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-029.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-029",
+    "activation": [
+      "Blocker",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-029"
+  },
+  "OP07-029_p1": {
+    "id": "Basil Hawkins_OP07-029_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Basil Hawkins",
+    "imageName": "OP07-029_p1.png",
+    "cost": "6",
+    "attribute": "Slash",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Hawkins Pirates"
+    ],
+    "text": "If your Leader has the {Supernovas} type, this Character gains [Blocker].(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[Once Per Turn] If this Character would be removed from the field by your opponent's effect, you may rest 1 of your opponent's Characters instead.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-029_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-029",
+    "activation": [
+      "Blocker",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-029_p1"
+  },
+  "OP07-030": {
+    "id": "Pappag_OP07-030",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Pappag",
+    "imageName": "OP07-030.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Animal"
+    ],
+    "text": "If you have a [Camie] Character, this Character gains [Blocker].(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-030.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-030",
+    "activation": [
+      "Camie",
+      "Blocker"
+    ],
+    "parallelId": "OP07-030"
+  },
+  "OP07-031": {
+    "id": "Bartolomeo_OP07-031",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Bartolomeo",
+    "imageName": "OP07-031.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Barto Club"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[Your Turn] [Once Per Turn] If a Character is rested by your effect, draw 1 card and trash 1 card from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-031.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-031",
+    "activation": [
+      "Blocker",
+      "Your Turn",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-031"
+  },
+  "OP07-032": {
+    "id": "Fisher Tiger_OP07-032",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Fisher Tiger",
+    "imageName": "OP07-032.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Fish-Man",
+      "The Sun Pirates"
+    ],
+    "text": "This Character can attack Characters on the turn in which it is played.[On Play] If your Leader has the {Fish-Man} or {Merfolk} type, rest up to 1 of your opponent's Characters with a cost of 6 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-032.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-032",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-032"
+  },
+  "OP07-033": {
+    "id": "Monkey.D.Luffy_OP07-033",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "OP07-033.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "text": "If you have 3 or more Characters, your Characters with a cost of 3 or less other than [Monkey.D.Luffy] cannot be K.O.'d by your opponent's effects.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-033.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-033",
+    "activation": [
+      "Monkey.D.Luffy"
+    ],
+    "parallelId": "OP07-033"
+  },
+  "OP07-034": {
+    "id": "Roronoa Zoro_OP07-034",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Roronoa Zoro",
+    "imageName": "OP07-034.png",
+    "cost": "1",
+    "attribute": "Slash",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "text": "[When Attacking] If you have 3 or more Characters, this Character gains +2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-034.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-034",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "OP07-034"
+  },
+  "OP07-035": {
+    "id": "Karmic Punishment_OP07-035",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "Karmic Punishment",
+    "imageName": "OP07-035.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger K.O. up to 1 of your opponent's rested Characters with a cost of 4 or less.",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Fallen Monk Pirates"
+    ],
+    "text": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 3 or more Characters, that card gains an additional +1000 power during this battle.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-035.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-035",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-035"
+  },
+  "OP07-036": {
+    "id": "Demonic Aura Nine-Sword Style Asura Demon Nine Flash_OP07-036",
+    "rarity": "R",
+    "cardType": "EVENT",
+    "name": "Demonic Aura Nine-Sword Style Asura Demon Nine Flash",
+    "imageName": "OP07-036.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "text": "[Main] Up to 1 of your Leader or Character cards gains +3000 power during this turn. Then, you may rest 1 of your Characters with a cost of 3 or more. If you do, rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-036.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-036",
+    "activation": [
+      "Main"
+    ],
+    "parallelId": "OP07-036"
+  },
+  "OP07-037": {
+    "id": "More Pizza!!_OP07-037",
+    "rarity": "UC",
+    "cardType": "EVENT",
+    "name": "More Pizza!!",
+    "imageName": "OP07-037.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Draw 1 card.",
+    "color": [
+      "Green"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[Main] Look at 5 cards from the top of your deck; reveal up to 1 {Supernovas} type card other than [More Pizza!!] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-037.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-037",
+    "activation": [
+      "Main",
+      "More Pizza!!"
+    ],
+    "parallelId": "OP07-037"
+  },
+  "OP07-038": {
+    "id": "Boa Hancock_OP07-038",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Boa Hancock",
+    "imageName": "OP07-038.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[Your Turn] [Once Per Turn] This effect can be activated when a Character is removed from the field by your effect. If you have 5 or less cards in your hand, draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-038.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-038",
+    "activation": [
+      "Your Turn",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-038"
+  },
+  "OP07-038_p1": {
+    "id": "Boa Hancock_OP07-038_p1",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Boa Hancock",
+    "imageName": "OP07-038_p1.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[Your Turn] [Once Per Turn] This effect can be activated when a Character is removed from the field by your effect. If you have 5 or less cards in your hand, draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-038_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-038",
+    "activation": [
+      "Your Turn",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-038_p1"
+  },
+  "OP07-039": {
+    "id": "Edward Weevil_OP07-039",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Edward Weevil",
+    "imageName": "OP07-039.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea"
+    ],
+    "text": "[DON!! x1] [When Attacking] Look at 3 cards from the top of your deck and place them at the top or bottom of the deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-039.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-039",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "OP07-039"
+  },
+  "OP07-040": {
+    "id": "Crocodile_OP07-040",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Crocodile",
+    "imageName": "OP07-040.png",
+    "cost": "4",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Baroque Works"
+    ],
+    "text": "[On Play] ① (You may rest the specified number of DON!! cards in your cost area.): Return up to 1 Character with a cost of 2 or less to the owner's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-040.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-040",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-040"
+  },
+  "OP07-041": {
+    "id": "Gloriosa (Grandma Nyon)_OP07-041",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Gloriosa (Grandma Nyon)",
+    "imageName": "OP07-041.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Amazon Lily"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Amazon Lily} or {Kuja Pirates} type card other than [Gloriosa (Grandma Nyon)] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-041.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-041",
+    "activation": [
+      "On Play",
+      "Gloriosa (Grandma Nyon)"
+    ],
+    "parallelId": "OP07-041"
+  },
+  "OP07-042": {
+    "id": "Gecko Moria_OP07-042",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Gecko Moria",
+    "imageName": "OP07-042.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Thriller Bark Pirates"
+    ],
+    "text": "[Once Per Turn] If your Leader has the {The Seven Warlords of the Sea} type and this Character would be removed from the field by your opponent's effect, you may place 1 of your Characters other than [Gecko Moria] at the bottom of the owner's deck instead.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-042.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-042",
+    "activation": [
+      "Once Per Turn",
+      "Gecko Moria"
+    ],
+    "parallelId": "OP07-042"
+  },
+  "OP07-043": {
+    "id": "Salome_OP07-043",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Salome",
+    "imageName": "OP07-043.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Animal",
+      "Kuja Pirates"
+    ],
+    "text": "[Your Turn] [On Play] Up to 1 of your [Boa Hancock] cards gains +2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-043.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-043",
+    "activation": [
+      "Your Turn",
+      "On Play",
+      "Boa Hancock"
+    ],
+    "parallelId": "OP07-043"
+  },
+  "OP07-044": {
+    "id": "Dracule Mihawk_OP07-044",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Dracule Mihawk",
+    "imageName": "OP07-044.png",
+    "cost": "8",
+    "attribute": "Slash",
+    "power": "10000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea"
+    ],
+    "text": "[On Play] Draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-044.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-044",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-044"
+  },
+  "OP07-045": {
+    "id": "Jinbe_OP07-045",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Jinbe",
+    "imageName": "OP07-045.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Fish-Man",
+      "The Seven Warlords of the Sea",
+      "The Sun Pirates"
+    ],
+    "text": "[On Play] Play up to 1 {The Seven Warlords of the Sea} type Character card with a cost of 4 or less other than [Jinbe] from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-045.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-045",
+    "activation": [
+      "On Play",
+      "Jinbe"
+    ],
+    "parallelId": "OP07-045"
+  },
+  "OP07-045_p1": {
+    "id": "Jinbe_OP07-045_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Jinbe",
+    "imageName": "OP07-045_p1.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Fish-Man",
+      "The Seven Warlords of the Sea",
+      "The Sun Pirates"
+    ],
+    "text": "[On Play] Play up to 1 {The Seven Warlords of the Sea} type Character card with a cost of 4 or less other than [Jinbe] from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-045_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-045",
+    "activation": [
+      "On Play",
+      "Jinbe"
+    ],
+    "parallelId": "OP07-045_p1"
+  },
+  "OP07-046": {
+    "id": "Sengoku_OP07-046",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Sengoku",
+    "imageName": "OP07-046.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {The Seven Warlords of the Sea} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-046.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-046",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-046"
+  },
+  "OP07-046_p1": {
+    "id": "Sengoku_OP07-046_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Sengoku",
+    "imageName": "OP07-046_p1.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Navy"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {The Seven Warlords of the Sea} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-046_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-046",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-046_p1"
+  },
+  "OP07-047": {
+    "id": "Trafalgar Law_OP07-047",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Trafalgar Law",
+    "imageName": "OP07-047.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Heart Pirates"
+    ],
+    "text": "[Activate: Main] You may return this Character to the owner's hand: If your opponent has 6 or more cards in their hand, your opponent places 1 card from their hand at the bottom of their deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-047.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-047",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-047"
+  },
+  "OP07-047_p1": {
+    "id": "Trafalgar Law_OP07-047_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Trafalgar Law",
+    "imageName": "OP07-047_p1.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Heart Pirates"
+    ],
+    "text": "[Activate: Main] You may return this Character to the owner's hand: If your opponent has 6 or more cards in their hand, your opponent places 1 card from their hand at the bottom of their deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-047_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-047",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-047_p1"
+  },
+  "OP07-048": {
+    "id": "Donquixote Doflamingo_OP07-048",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Donquixote Doflamingo",
+    "imageName": "OP07-048.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Donquixote Pirates"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] ➁ (You may rest the specified number of DON!! cards in your cost area.): Reveal 1 card from the top of your deck. If that card is a {The Seven Warlords of the Sea} type Character card with a cost of 4 or less, you may play that card rested. Then, place the rest at the bottom of your deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-048.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-048",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-048"
+  },
+  "OP07-049": {
+    "id": "Buckin_OP07-049",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Buckin",
+    "imageName": "OP07-049.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Weevil's Mother"
+    ],
+    "text": "[On Play] Play up to 1 [Edward Weevil] with a cost of 4 or less from your hand rested.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-049.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-049",
+    "activation": [
+      "On Play",
+      "Edward Weevil"
+    ],
+    "parallelId": "OP07-049"
+  },
+  "OP07-050": {
+    "id": "Boa Sandersonia_OP07-050",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Boa Sandersonia",
+    "imageName": "OP07-050.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "3000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Kuja Pirates"
+    ],
+    "text": "[On Play] If you have 2 or more {Amazon Lily} or {Kuja Pirates} type Characters on your field, return up to 1 of your opponent's Characters with a cost of 3 or less to the owner's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-050.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-050",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-050"
+  },
+  "OP07-051": {
+    "id": "Boa Hancock_OP07-051",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Boa Hancock",
+    "imageName": "OP07-051.png",
+    "cost": "6",
+    "attribute": "Special",
+    "power": "8000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[On Play] Up to 1 of your opponent's Characters other than [Monkey.D.Luffy] cannot attack until the end of your opponent's next turn. Then, place up to 1 Character with a cost of 1 or less at the bottom of the owner's deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-051.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-051",
+    "activation": [
+      "On Play",
+      "Monkey.D.Luffy"
+    ],
+    "parallelId": "OP07-051"
+  },
+  "OP07-051_p1": {
+    "id": "Boa Hancock_OP07-051_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Boa Hancock",
+    "imageName": "OP07-051_p1.png",
+    "cost": "6",
+    "attribute": "Special",
+    "power": "8000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[On Play] Up to 1 of your opponent's Characters other than [Monkey.D.Luffy] cannot attack until the end of your opponent's next turn. Then, place up to 1 Character with a cost of 1 or less at the bottom of the owner's deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-051_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-051",
+    "activation": [
+      "On Play",
+      "Monkey.D.Luffy"
+    ],
+    "parallelId": "OP07-051_p1"
+  },
+  "OP07-051_p2": {
+    "id": "Boa Hancock_OP07-051_p2",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Boa Hancock",
+    "imageName": "OP07-051_p2.png",
+    "cost": "6",
+    "attribute": "Special",
+    "power": "8000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[On Play] Up to 1 of your opponent's Characters other than [Monkey.D.Luffy] cannot attack until the end of your opponent's next turn. Then, place up to 1 Character with a cost of 1 or less at the bottom of the owner's deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-051_p2.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-051",
+    "activation": [
+      "On Play",
+      "Monkey.D.Luffy"
+    ],
+    "parallelId": "OP07-051_p2"
+  },
+  "OP07-052": {
+    "id": "Boa Marigold_OP07-052",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Boa Marigold",
+    "imageName": "OP07-052.png",
+    "cost": "5",
+    "attribute": "Slash",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Kuja Pirates"
+    ],
+    "text": "[On Play] If you have 2 or more {Amazon Lily} or {Kuja Pirates} type Characters on your field, place up to 1 Character with a cost of 2 or less at the bottom of the owner's deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-052.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-052",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-052"
+  },
+  "OP07-053": {
+    "id": "Portgas.D.Ace_OP07-053",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Portgas.D.Ace",
+    "imageName": "OP07-053.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Whitebeard Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] Draw 2 cards and place 2 cards from your hand at the top or bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-053.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-053",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP07-053"
+  },
+  "OP07-054": {
+    "id": "Marguerite_OP07-054",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Marguerite",
+    "imageName": "OP07-054.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "2000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Amazon Lily"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] Draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-054.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-054",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP07-054"
+  },
+  "OP07-055": {
+    "id": "Snake Dance_OP07-055",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "Snake Dance",
+    "imageName": "OP07-055.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger You may return 1 of your Characters to the owner's hand: Return up to 1 of your opponent's Characters with a cost of 5 or less to the owner's hand.",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Kuja Pirates"
+    ],
+    "text": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, return up to 1 of your Characters to the owner's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-055.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-055",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-055"
+  },
+  "OP07-056": {
+    "id": "Slave Arrow_OP07-056",
+    "rarity": "UC",
+    "cardType": "EVENT",
+    "name": "Slave Arrow",
+    "imageName": "OP07-056.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Draw 2 cards and place 2 cards from your hand at the bottom of your deck in any order.",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[Counter] You may return 1 of your Characters with a cost of 2 or more to the owner's hand: Up to 1 of your Leader or Character cards gains +4000 power during this battle.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-056.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-056",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-056"
+  },
+  "OP07-057": {
+    "id": "Perfume Femur_OP07-057",
+    "rarity": "R",
+    "cardType": "EVENT",
+    "name": "Perfume Femur",
+    "imageName": "OP07-057.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Draw 1 card.",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Kuja Pirates"
+    ],
+    "text": "[Main] Select up to 1 of your {The Seven Warlords of the Sea} type Leader or Character cards and that card gains +2000 power during this turn. Then, if the selected card attacks during this turn, your opponent cannot activate [Blocker].",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-057.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-057",
+    "activation": [
+      "Main",
+      "Blocker"
+    ],
+    "parallelId": "OP07-057"
+  },
+  "OP07-058": {
+    "id": "Island of Women_OP07-058",
+    "rarity": "C",
+    "cardType": "STAGE",
+    "name": "Island of Women",
+    "imageName": "OP07-058.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Amazon Lily"
+    ],
+    "text": "[Activate: Main] You may trash 1 card from your hand and rest this Stage: If your Leader has the {Kuja Pirates} type, return up to 1 of your {Amazon Lily} or {Kuja Pirates} type Characters to the owner's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-058.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-058",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-058"
+  },
+  "OP07-059": {
+    "id": "Foxy_OP07-059",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Foxy",
+    "imageName": "OP07-059.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[When Attacking] DON!! −3 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If you have 3 or more {Foxy Pirates} type Characters, select your opponent's rested Leader and up to 1 Character card. The selected cards will not become active in your opponent's next Refresh Phase.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-059.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-059",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "OP07-059"
+  },
+  "OP07-059_p1": {
+    "id": "Foxy_OP07-059_p1",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Foxy",
+    "imageName": "OP07-059_p1.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[When Attacking] DON!! −3 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If you have 3 or more {Foxy Pirates} type Characters, select your opponent's rested Leader and up to 1 Character card. The selected cards will not become active in your opponent's next Refresh Phase.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-059_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-059",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "OP07-059_p1"
+  },
+  "OP07-060": {
+    "id": "Itomimizu_OP07-060",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Itomimizu",
+    "imageName": "OP07-060.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] If your Leader has the {Foxy Pirates} type and you have no other [Itomimizu], add up to 1 DON!! card from your DON!! deck and rest it.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-060.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-060",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn",
+      "Itomimizu"
+    ],
+    "parallelId": "OP07-060"
+  },
+  "OP07-061": {
+    "id": "Vinsmoke Sanji_OP07-061",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Vinsmoke Sanji",
+    "imageName": "OP07-061.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Kingdom of GERMA",
+      "The Vinsmoke Family"
+    ],
+    "text": "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the {The Vinsmoke Family} type, draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-061.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-061",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-061"
+  },
+  "OP07-062": {
+    "id": "Vinsmoke Reiju_OP07-062",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Vinsmoke Reiju",
+    "imageName": "OP07-062.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Kingdom of GERMA",
+      "The Vinsmoke Family"
+    ],
+    "text": "[On Play] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, return up to 1 of your {The Vinsmoke Family} type Characters with a cost of 1 to the owner's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-062.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-062",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-062"
+  },
+  "OP07-063": {
+    "id": "Capote_OP07-063",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Capote",
+    "imageName": "OP07-063.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Fish-Man",
+      "Foxy Pirates"
+    ],
+    "text": "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the {Foxy Pirates} type, up to 1 of your opponent's Characters with a cost of 6 or less cannot attack until the end of your opponent's next turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-063.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-063",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-063"
+  },
+  "OP07-064": {
+    "id": "Sanji_OP07-064",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Sanji",
+    "imageName": "OP07-064.png",
+    "cost": "6",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "If the number of DON!! cards on your field is at least 2 less than the number on your opponent's field, give this card in your hand −3 cost.[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-064.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-064",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP07-064"
+  },
+  "OP07-064_p1": {
+    "id": "Sanji_OP07-064_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Sanji",
+    "imageName": "OP07-064_p1.png",
+    "cost": "6",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "If the number of DON!! cards on your field is at least 2 less than the number on your opponent's field, give this card in your hand −3 cost.[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-064_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-064",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP07-064_p1"
+  },
+  "OP07-065": {
+    "id": "Gina_OP07-065",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Gina",
+    "imageName": "OP07-065.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[On Play] If your Leader has the {Foxy Pirates} type and the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-065.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-065",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-065"
+  },
+  "OP07-066": {
+    "id": "Tony Tony.Chopper_OP07-066",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Tony Tony.Chopper",
+    "imageName": "OP07-066.png",
+    "cost": "2",
+    "attribute": "Strike",
+    "power": "-",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Animal",
+      "Foxy Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-066.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-066",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP07-066"
+  },
+  "OP07-067": {
+    "id": "Tonjit_OP07-067",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Tonjit",
+    "imageName": "OP07-067.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Long Ring Long Land"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-067.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-067",
+    "activation": null,
+    "parallelId": "OP07-067"
+  },
+  "OP07-068": {
+    "id": "Hamburg_OP07-068",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Hamburg",
+    "imageName": "OP07-068.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[DON!! x1] [When Attacking] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-068.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-068",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "OP07-068"
+  },
+  "OP07-069": {
+    "id": "Pickles_OP07-069",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Pickles",
+    "imageName": "OP07-069.png",
+    "cost": "3",
+    "attribute": "Strike",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, your {Foxy Pirates} type Characters other than [Pickles] cannot be K.O.'d by your opponent's effects.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-069.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-069",
+    "activation": [
+      "Pickles"
+    ],
+    "parallelId": "OP07-069"
+  },
+  "OP07-070": {
+    "id": "Big Bun_OP07-070",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Big Bun",
+    "imageName": "OP07-070.png",
+    "cost": "6",
+    "attribute": "Strike",
+    "power": "7000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Giant",
+      "Fish-Man",
+      "Foxy Pirates"
+    ],
+    "text": "[On Play] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, play up to 1 {Foxy Pirates} type card with a cost of 4 or less from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-070.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-070",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-070"
+  },
+  "OP07-071": {
+    "id": "Foxy_OP07-071",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Foxy",
+    "imageName": "OP07-071.png",
+    "cost": "7",
+    "attribute": "Special",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[Opponent's Turn] If your Leader has the {Foxy Pirates} type, give all of your opponent's Characters −1000 power.[Activate: Main] [Once Per Turn] Add up to 1 DON!! card from your DON!! deck and rest it.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-071.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-071",
+    "activation": [
+      "Opponent's Turn",
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-071"
+  },
+  "OP07-071_p1": {
+    "id": "Foxy_OP07-071_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Foxy",
+    "imageName": "OP07-071_p1.png",
+    "cost": "7",
+    "attribute": "Special",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[Opponent's Turn] If your Leader has the {Foxy Pirates} type, give all of your opponent's Characters −1000 power.[Activate: Main] [Once Per Turn] Add up to 1 DON!! card from your DON!! deck and rest it.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-071_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-071",
+    "activation": [
+      "Opponent's Turn",
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-071_p1"
+  },
+  "OP07-072": {
+    "id": "Porche_OP07-072",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Porche",
+    "imageName": "OP07-072.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Look at 5 cards from the top of your deck; reveal up to 1 {Foxy Pirates} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order and play up to 1 purple Character card with 4000 power or less from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-072.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-072",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-072"
+  },
+  "OP07-072_p1": {
+    "id": "Porche_OP07-072_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Porche",
+    "imageName": "OP07-072_p1.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Look at 5 cards from the top of your deck; reveal up to 1 {Foxy Pirates} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order and play up to 1 purple Character card with 4000 power or less from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-072_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-072",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-072_p1"
+  },
+  "OP07-073": {
+    "id": "Monkey.D.Luffy_OP07-073",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "OP07-073.png",
+    "cost": "6",
+    "attribute": "Strike",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] DON!! −3 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your opponent has 3 or more Characters, set this Character as active.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-073.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-073",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-073"
+  },
+  "OP07-074": {
+    "id": "Monda_OP07-074",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Monda",
+    "imageName": "OP07-074.png",
+    "cost": "2",
+    "attribute": "Strike",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Animal",
+      "Foxy Pirates"
+    ],
+    "text": "[Activate: Main] You may trash this Character: If your Leader has the {Foxy Pirates} type, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-074.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-074",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-074"
+  },
+  "OP07-075": {
+    "id": "Slow-Slow Beam_OP07-075",
+    "rarity": "UC",
+    "cardType": "EVENT",
+    "name": "Slow-Slow Beam",
+    "imageName": "OP07-075.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[Counter] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Give up to 1 each of your opponent's Leader and Character cards −2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-075.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-075",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-075"
+  },
+  "OP07-076": {
+    "id": "Slow-Slow Beam Sword_OP07-076",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "Slow-Slow Beam Sword",
+    "imageName": "OP07-076.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[Counter] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, rest up to 1 of your opponent's Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-076.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-076",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-076"
+  },
+  "OP07-077": {
+    "id": "We're Going to Claim the One Piece!!!_OP07-077",
+    "rarity": "R",
+    "cardType": "EVENT",
+    "name": "We're Going to Claim the One Piece!!!",
+    "imageName": "OP07-077.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger effect.",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "The Four Emperors",
+      "Land of Wano"
+    ],
+    "text": "[Main] If your Leader has the {Animal Kingdom Pirates} or {Big Mom Pirates} type, look at 5 cards from the top of your deck; reveal up to 1 {Animal Kingdom Pirates} or {Big Mom Pirates} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-077.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-077",
+    "activation": [
+      "Main"
+    ],
+    "parallelId": "OP07-077"
+  },
+  "OP07-078": {
+    "id": "Megaton Nine-Tails Rush_OP07-078",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "Megaton Nine-Tails Rush",
+    "imageName": "OP07-078.png",
+    "cost": "3",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Foxy Pirates"
+    ],
+    "text": "[Main] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, set up to 1 of your [Foxy] cards as active.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-078.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-078",
+    "activation": [
+      "Main",
+      "Foxy"
+    ],
+    "parallelId": "OP07-078"
+  },
+  "OP07-079": {
+    "id": "Rob Lucci_OP07-079",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Rob Lucci",
+    "imageName": "OP07-079.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[When Attacking] You may trash 2 cards from the top of your deck: Give up to 1 of your opponent's Characters −1 cost during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-079.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-079",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "OP07-079"
+  },
+  "OP07-079_p1": {
+    "id": "Rob Lucci_OP07-079_p1",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Rob Lucci",
+    "imageName": "OP07-079_p1.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[When Attacking] You may trash 2 cards from the top of your deck: Give up to 1 of your opponent's Characters −1 cost during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-079_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-079",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "OP07-079_p1"
+  },
+  "OP07-080": {
+    "id": "Kaku_OP07-080",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Kaku",
+    "imageName": "OP07-080.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[On Play] You may place 2 cards with a type including \"CP\" from your trash at the bottom of your deck in any order: Give up to 1 of your opponent's Characters −3 cost during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-080.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-080",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-080"
+  },
+  "OP07-081": {
+    "id": "Kalifa_OP07-081",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Kalifa",
+    "imageName": "OP07-081.png",
+    "cost": "4",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[DON!! x1] [Your Turn] Give all of your opponent's Characters −1 cost.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-081.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-081",
+    "activation": [
+      "DON!! x1",
+      "Your Turn"
+    ],
+    "parallelId": "OP07-081"
+  },
+  "OP07-082": {
+    "id": "Captain John_OP07-082",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Captain John",
+    "imageName": "OP07-082.png",
+    "cost": "2",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Thriller Bark Pirates",
+      "Former Rocks Pirates"
+    ],
+    "text": "[On Play] Trash 2 cards from the top of your deck and give up to 1 of your opponent's Characters −1 cost during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-082.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-082",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-082"
+  },
+  "OP07-083": {
+    "id": "Gecko Moria_OP07-083",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Gecko Moria",
+    "imageName": "OP07-083.png",
+    "cost": "4",
+    "attribute": "Special",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "The Seven Warlords of the Sea",
+      "Thriller Bark Pirates"
+    ],
+    "text": "[Activate: Main] You may place 4 {Thriller Bark Pirates} type cards from your trash at the bottom of your deck in any order: This Character gains [Banish] and +1000 power during this turn.(When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-083.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-083",
+    "activation": [
+      "Activate: Main",
+      "Banish"
+    ],
+    "parallelId": "OP07-083"
+  },
+  "OP07-084": {
+    "id": "Gismonda_OP07-084",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Gismonda",
+    "imageName": "OP07-084.png",
+    "cost": "2",
+    "attribute": "Strike",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-084.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-084",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP07-084"
+  },
+  "OP07-085": {
+    "id": "Stussy_OP07-085",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Stussy",
+    "imageName": "OP07-085.png",
+    "cost": "9",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[On Play] You may trash 1 of your Characters: K.O. up to 1 of your opponent's Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-085.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-085",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-085"
+  },
+  "OP07-085_p1": {
+    "id": "Stussy_OP07-085_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Stussy",
+    "imageName": "OP07-085_p1.png",
+    "cost": "9",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[On Play] You may trash 1 of your Characters: K.O. up to 1 of your opponent's Characters.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-085_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-085",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-085_p1"
+  },
+  "OP07-086": {
+    "id": "Spandam_OP07-086",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Spandam",
+    "imageName": "OP07-086.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[On Play] Trash 2 cards from the top of your deck and give up to 1 of your opponent's Characters −2 cost during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-086.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-086",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-086"
+  },
+  "OP07-087": {
+    "id": "Baskerville_OP07-087",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Baskerville",
+    "imageName": "OP07-087.png",
+    "cost": "3",
+    "attribute": "Slash",
+    "power": "3000",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "World Government"
+    ],
+    "text": "[Your Turn] If your opponent has a Character with a cost of 0, this Character gains +3000 power.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-087.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-087",
+    "activation": [
+      "Your Turn"
+    ],
+    "parallelId": "OP07-087"
+  },
+  "OP07-088": {
+    "id": "Hattori_OP07-088",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Hattori",
+    "imageName": "OP07-088.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Animal",
+      "CP0"
+    ],
+    "text": "[Your Turn] [On Play] Up to 1 of your [Rob Lucci] cards gains +2000 power during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-088.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-088",
+    "activation": [
+      "Your Turn",
+      "On Play",
+      "Rob Lucci"
+    ],
+    "parallelId": "OP07-088"
+  },
+  "OP07-089": {
+    "id": "Maha_OP07-089",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Maha",
+    "imageName": "OP07-089.png",
+    "cost": "6",
+    "attribute": "Strike",
+    "power": "8000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-089.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-089",
+    "activation": null,
+    "parallelId": "OP07-089"
+  },
+  "OP07-090": {
+    "id": "Morgans_OP07-090",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Morgans",
+    "imageName": "OP07-090.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Journalist"
+    ],
+    "text": "[On Play] Your opponent trashes 1 card from their hand and reveals their hand. Then, your opponent draws 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-090.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-090",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-090"
+  },
+  "OP07-091": {
+    "id": "Monkey.D.Luffy_OP07-091",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "OP07-091.png",
+    "cost": "5",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[When Attacking] Trash up to 1 of your opponent's Characters with a cost of 2 or less. Then, place any number of Character cards with a cost of 4 or more from your trash at the bottom of your deck in any order. This Character gains +1000 power during this turn for every 3 cards placed at the bottom of your deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-091.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-091",
+    "activation": [
+      "When Attacking"
+    ],
+    "parallelId": "OP07-091"
+  },
+  "OP07-092": {
+    "id": "Joseph_OP07-092",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Joseph",
+    "imageName": "OP07-092.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "2000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[On Play] You may place 2 cards with a type including \"CP\" from your trash at the bottom of your deck in any order: K.O. up to 1 of your opponent's Characters with a cost of 1 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-092.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-092",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-092"
+  },
+  "OP07-093": {
+    "id": "Rob Lucci_OP07-093",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Rob Lucci",
+    "imageName": "OP07-093.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP0"
+    ],
+    "text": "[On Play] You may place 3 cards from your trash at the bottom of your deck in any order: Your opponent trashes 1 card from their hand. Then, you may place up to 1 card from your opponent's trash at the bottom of their deck.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-093.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-093",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-093"
+  },
+  "OP07-094": {
+    "id": "Shave_OP07-094",
+    "rarity": "UC",
+    "cardType": "EVENT",
+    "name": "Shave",
+    "imageName": "OP07-094.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Return up to 1 of your Characters to the owner's hand.",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP9"
+    ],
+    "text": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 10 or more cards in your trash, return up to 1 of your Characters with a type including \"CP\" to the owner's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-094.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-094",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-094"
+  },
+  "OP07-095": {
+    "id": "Iron Body_OP07-095",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "Iron Body",
+    "imageName": "OP07-095.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP9"
+    ],
+    "text": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, if you have 10 or more cards in your trash, that card gains an additional +2000 power during this battle.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-095.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-095",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-095"
+  },
+  "OP07-096": {
+    "id": "Tempest Kick_OP07-096",
+    "rarity": "R",
+    "cardType": "EVENT",
+    "name": "Tempest Kick",
+    "imageName": "OP07-096.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "CP9"
+    ],
+    "text": "[Main] Draw 1 card. Then, if you have 10 or more cards in your trash, give up to 1 of your opponent's Characters −3 cost during this turn.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-096.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-096",
+    "activation": [
+      "Main"
+    ],
+    "parallelId": "OP07-096"
+  },
+  "OP07-097": {
+    "id": "Vegapunk_OP07-097",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Vegapunk",
+    "imageName": "OP07-097.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "This Leader cannot attack.[Activate: Main] [Once Per Turn] ① (You may rest the specified number of DON!! cards in your cost area.): Select up to 1 {Egghead} type card with a cost of 5 or less from your hand and play it or add it to the top of your Life cards face-up.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-097.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-097",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-097"
+  },
+  "OP07-097_p1": {
+    "id": "Vegapunk_OP07-097_p1",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Vegapunk",
+    "imageName": "OP07-097_p1.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "This Leader cannot attack.[Activate: Main] [Once Per Turn] ① (You may rest the specified number of DON!! cards in your cost area.): Select up to 1 {Egghead} type card with a cost of 5 or less from your hand and play it or add it to the top of your Life cards face-up.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-097_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-097",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-097_p1"
+  },
+  "OP07-098": {
+    "id": "Atlas_OP07-098",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Atlas",
+    "imageName": "OP07-098.png",
+    "cost": "5",
+    "attribute": "Wisdom",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "If you have less Life cards than your opponent, this Character cannot be K.O.'d in battle.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-098.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-098",
+    "activation": null,
+    "parallelId": "OP07-098"
+  },
+  "OP07-099": {
+    "id": "Usopp_OP07-099",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Usopp",
+    "imageName": "OP07-099.png",
+    "cost": "1",
+    "attribute": "Ranged",
+    "power": "2000",
+    "counter": "2000",
+    "trigger": "Trigger Up to 1 of your {Egghead} type Leader or Character cards gains +2000 power until the end of your next turn.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-099.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-099",
+    "activation": null,
+    "parallelId": "OP07-099"
+  },
+  "OP07-100": {
+    "id": "Edison_OP07-100",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Edison",
+    "imageName": "OP07-100.png",
+    "cost": "4",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "2000",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[On Play] If you have 2 or less Life cards, draw 2 cards and trash 2 card from your hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-100.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-100",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-100"
+  },
+  "OP07-101": {
+    "id": "Shaka_OP07-101",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Shaka",
+    "imageName": "OP07-101.png",
+    "cost": "5",
+    "attribute": "Wisdom",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-101.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-101",
+    "activation": [
+      "Blocker"
+    ],
+    "parallelId": "OP07-101"
+  },
+  "OP07-102": {
+    "id": "Jinbe_OP07-102",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Jinbe",
+    "imageName": "OP07-102.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger Return up to 1 of your opponent's Characters with a cost of 4 or less to the owner's hand and add this card to your hand.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Fish-Man",
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-102.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-102",
+    "activation": null,
+    "parallelId": "OP07-102"
+  },
+  "OP07-103": {
+    "id": "Tony Tony.Chopper_OP07-103",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Tony Tony.Chopper",
+    "imageName": "OP07-103.png",
+    "cost": "2",
+    "attribute": "Wisdom",
+    "power": "3000",
+    "counter": "1000",
+    "trigger": "Trigger during this turn. Then, add this card to your hand.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Animal",
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-103.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-103",
+    "activation": null,
+    "parallelId": "OP07-103"
+  },
+  "OP07-104": {
+    "id": "Nico Robin_OP07-104",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Nico Robin",
+    "imageName": "OP07-104.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "Trigger If your Leader has the {Egghead} type, draw 2 cards.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-104.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-104",
+    "activation": null,
+    "parallelId": "OP07-104"
+  },
+  "OP07-105": {
+    "id": "Pythagoras_OP07-105",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Pythagoras",
+    "imageName": "OP07-105.png",
+    "cost": "5",
+    "attribute": "Wisdom",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[On K.O.] If you have 2 or less Life cards, play up to 1 {Egghead} type Character card with a cost of 4 or less from your trash rested.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-105.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-105",
+    "activation": [
+      "On K.O."
+    ],
+    "parallelId": "OP07-105"
+  },
+  "OP07-106": {
+    "id": "Fuza_OP07-106",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Fuza",
+    "imageName": "OP07-106.png",
+    "cost": "4",
+    "attribute": "Special",
+    "power": "6000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Animal",
+      "Sky Island"
+    ],
+    "text": "[DON!! x1] [When Attacking] If you have 1 or less Life cards, K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-106.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-106",
+    "activation": [
+      "DON!! x1",
+      "When Attacking"
+    ],
+    "parallelId": "OP07-106"
+  },
+  "OP07-107": {
+    "id": "Franky_OP07-107",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Franky",
+    "imageName": "OP07-107.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "2000",
+    "trigger": "Trigger Draw 1 card. Then, if you have 1 or less Life cards, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-107.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-107",
+    "activation": null,
+    "parallelId": "OP07-107"
+  },
+  "OP07-107_p1": {
+    "id": "Franky_OP07-107_p1",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Franky",
+    "imageName": "OP07-107_p1.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "2000",
+    "trigger": "Trigger Draw 1 card. Then, if you have 1 or less Life cards, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-107_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-107",
+    "activation": null,
+    "parallelId": "OP07-107_p1"
+  },
+  "OP07-108": {
+    "id": "Vega Force 01_OP07-108",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "Vega Force 01",
+    "imageName": "OP07-108.png",
+    "cost": "4",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-108.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-108",
+    "activation": null,
+    "parallelId": "OP07-108"
+  },
+  "OP07-109": {
+    "id": "Monkey.D.Luffy_OP07-109",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "OP07-109.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger K.O. up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "The Four Emperors",
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "[Activate: Main] You may trash this Character: If you have 2 or less Life cards, K.O. up to 1 of your opponent's Characters with a cost of 4 or less. Then, draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE- NotesAbout errors in \"OP07-008 Mr. Tanaka\" and \"OP07-109 Monkey.D.Luffy\" illustration",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-109.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-109",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-109"
+  },
+  "OP07-109_p1": {
+    "id": "Monkey.D.Luffy_OP07-109_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "OP07-109_p1.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger K.O. up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "The Four Emperors",
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "[Activate: Main] You may trash this Character: If you have 2 or less Life cards, K.O. up to 1 of your opponent's Characters with a cost of 4 or less. Then, draw 1 card.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-109_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-109",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP07-109_p1"
+  },
+  "OP07-110": {
+    "id": "York_OP07-110",
+    "rarity": "C",
+    "cardType": "CHARACTER",
+    "name": "York",
+    "imageName": "OP07-110.png",
+    "cost": "5",
+    "attribute": "Wisdom",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-110.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-110",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-110"
+  },
+  "OP07-111": {
+    "id": "Lilith_OP07-111",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Lilith",
+    "imageName": "OP07-111.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Egghead} type card other than [Lilith] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-111.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-111",
+    "activation": [
+      "On Play",
+      "Lilith"
+    ],
+    "parallelId": "OP07-111"
+  },
+  "OP07-111_p1": {
+    "id": "Lilith_OP07-111_p1",
+    "rarity": "SR",
+    "cardType": "CHARACTER",
+    "name": "Lilith",
+    "imageName": "OP07-111_p1.png",
+    "cost": "3",
+    "attribute": "Wisdom",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "Trigger, play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Egghead} type card other than [Lilith] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-111_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-111",
+    "activation": [
+      "On Play",
+      "Lilith"
+    ],
+    "parallelId": "OP07-111_p1"
+  },
+  "OP07-112": {
+    "id": "Lucy_OP07-112",
+    "rarity": "R",
+    "cardType": "CHARACTER",
+    "name": "Lucy",
+    "imageName": "OP07-112.png",
+    "cost": "6",
+    "attribute": "Strike",
+    "power": "7000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Dressrosa",
+      "Revolutionary Army"
+    ],
+    "text": "[When Attacking] [Once Per Turn] You may add 1 card from the top or bottom of your Life cards to your hand: You may rest up to 1 of your opponent's Characters with a cost of 4 or less. Then, if you have 1 or less Life cards, add up to 1 card from the top of your deck to the top of your Life cards.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-112.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-112",
+    "activation": [
+      "When Attacking",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP07-112"
+  },
+  "OP07-113": {
+    "id": "Roronoa Zoro_OP07-113",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Roronoa Zoro",
+    "imageName": "OP07-113.png",
+    "cost": "5",
+    "attribute": "Slash",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "Trigger If your Leader has the {Egghead} type, rest up to 1 of your opponent's Leader or Character cards.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "text": "-",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-113.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-113",
+    "activation": null,
+    "parallelId": "OP07-113"
+  },
+  "OP07-114": {
+    "id": "He Possesses the World's Most Brilliant Mind_OP07-114",
+    "rarity": "UC",
+    "cardType": "EVENT",
+    "name": "He Possesses the World's Most Brilliant Mind",
+    "imageName": "OP07-114.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Draw 1 card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[Main] Look at 5 cards from the top of your deck; reveal up to 1 {Egghead} type card other than [He Possesses the World's Most Brilliant Mind] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-114.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-114",
+    "activation": [
+      "Main",
+      "He Possesses the World's Most Brilliant Mind"
+    ],
+    "parallelId": "OP07-114"
+  },
+  "OP07-115": {
+    "id": "I Re-Quasar Helllp!!_OP07-115",
+    "rarity": "C",
+    "cardType": "EVENT",
+    "name": "I Re-Quasar Helllp!!",
+    "imageName": "OP07-115.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Play up to 1 of your {Egghead} type Character cards with a cost of 5 or less from your trash.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Scientist",
+      "Egghead"
+    ],
+    "text": "[Counter] If you have 2 or less Life cards, up to 1 of your Leader or Character cards gains +3000 power during this battle.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-115.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-115",
+    "activation": [
+      "Counter"
+    ],
+    "parallelId": "OP07-115"
+  },
+  "OP07-116": {
+    "id": "Blaze Slice_OP07-116",
+    "rarity": "R",
+    "cardType": "EVENT",
+    "name": "Blaze Slice",
+    "imageName": "OP07-116.png",
+    "cost": "1",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Land of Wano",
+      "The Akazaya Nine"
+    ],
+    "text": "[Main]/[Counter] Up to 1 of your Leader or Character cards gains +1000 power during this turn. Then, if your opponent has 2 or less Life cards, rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-116.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-116",
+    "activation": [
+      "Main",
+      "Counter"
+    ],
+    "parallelId": "OP07-116"
+  },
+  "OP07-117": {
+    "id": "Egghead_OP07-117",
+    "rarity": "C",
+    "cardType": "STAGE",
+    "name": "Egghead",
+    "imageName": "OP07-117.png",
+    "cost": "2",
+    "attribute": "",
+    "power": "-",
+    "counter": "-",
+    "trigger": "Trigger Play this card.",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Egghead"
+    ],
+    "text": "[End of Your Turn] If you have 3 or less Life cards, set up to 1 {Egghead} type Character with a cost of 5 or less as active.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-117.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-117",
+    "activation": [
+      "End of Your Turn"
+    ],
+    "parallelId": "OP07-117"
+  },
+  "OP07-118": {
+    "id": "Sabo_OP07-118",
+    "rarity": "SEC",
+    "cardType": "CHARACTER",
+    "name": "Sabo",
+    "imageName": "OP07-118.png",
+    "cost": "8",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[On Play] You may trash 1 card from your hand: K.O. up to 1 of your opponent's Characters with a cost of 5 or less and up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-118.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-118",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-118"
+  },
+  "OP07-118_p1": {
+    "id": "Sabo_OP07-118_p1",
+    "rarity": "SEC",
+    "cardType": "CHARACTER",
+    "name": "Sabo",
+    "imageName": "OP07-118_p1.png",
+    "cost": "8",
+    "attribute": "Special",
+    "power": "9000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[On Play] You may trash 1 card from your hand: K.O. up to 1 of your opponent's Characters with a cost of 5 or less and up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-118_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-118",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP07-118_p1"
+  },
+  "OP07-119": {
+    "id": "Portgas.D.Ace_OP07-119",
+    "rarity": "SEC",
+    "cardType": "CHARACTER",
+    "name": "Portgas.D.Ace",
+    "imageName": "OP07-119.png",
+    "cost": "10",
+    "attribute": "Special",
+    "power": "10000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Whitebeard Pirates"
+    ],
+    "text": "[On Play] Add up to 1 card from the top of your deck to the top of your Life cards. Then, if you have 2 or less Life cards, this Character gains [Rush] during this turn.(This card can attack on the turn in which it is played.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-119.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-119",
+    "activation": [
+      "On Play",
+      "Rush"
+    ],
+    "parallelId": "OP07-119"
+  },
+  "OP07-119_p1": {
+    "id": "Portgas.D.Ace_OP07-119_p1",
+    "rarity": "SEC",
+    "cardType": "CHARACTER",
+    "name": "Portgas.D.Ace",
+    "imageName": "OP07-119_p1.png",
+    "cost": "10",
+    "attribute": "Special",
+    "power": "10000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Whitebeard Pirates"
+    ],
+    "text": "[On Play] Add up to 1 card from the top of your deck to the top of your Life cards. Then, if you have 2 or less Life cards, this Character gains [Rush] during this turn.(This card can attack on the turn in which it is played.)",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP07-119_p1.png",
+    "cardSetCode": "OP07",
+    "cardId": "OP07-119",
+    "activation": [
+      "On Play",
+      "Rush"
+    ],
+    "parallelId": "OP07-119_p1"
+  },
+  "ST10-010_p2": {
+    "id": "Trafalgar Law_ST10-010_p2",
+    "rarity": "TR",
+    "cardType": "CHARACTER",
+    "name": "Trafalgar Law",
+    "imageName": "ST10-010_p2.png",
+    "cost": "4",
+    "attribute": "Slash",
+    "power": "5000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Heart Pirates"
+    ],
+    "text": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] DON!! －1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your opponent has 7 or more cards in their hand, trash 2 cards from your opponent's hand.",
+    "cardSet": "-500 YEARS IN THE FUTURE-",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/ST10-010_p2.png",
+    "cardSetCode": "ST10",
+    "cardId": "ST10-010",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "ST10-010_p2"
+  },
+  "OP05-060_p2": {
+    "id": "Monkey.D.Luffy_OP05-060_p2",
+    "rarity": "L",
+    "cardType": "LEADER",
+    "name": "Monkey.D.Luffy",
+    "imageName": "OP05-060_p2.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "5000",
+    "counter": "-",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "Straw Hat Crew"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] You may add 1 card from the top of your Life cards to your hand: If you have 0 or 3 or more DON!! cards on your field, add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "cardSet": "One Piece Card Game x PSA Exclusive Promo Card",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP05-060_p2.png",
+    "cardSetCode": "OP05",
+    "cardId": "OP05-060",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "OP05-060_p2"
   }
 }

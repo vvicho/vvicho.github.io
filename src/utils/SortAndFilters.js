@@ -22,6 +22,14 @@ export const sortCardsById = (x, y) => {
     const setY = y.cardSetCode.split('-')[0];
     const indexOfX = setOrder.indexOf(setX);
     const indexOfY = setOrder.indexOf(setY);
+
+    const xAlt = x.parallelId.indexOf('_') > 0;
+    const yAlt = x.parallelId.indexOf('_') > 0;
+
+    if (xAlt !== yAlt) {
+        return xAlt ? xAlt : yAlt;
+    }
+
     if (indexOfX !== indexOfY) {
         return indexOfX - indexOfY;
     }
@@ -31,6 +39,15 @@ export const sortCardsById = (x, y) => {
 export const sortCards = (x, y) => {
     const xSet = x.cardSetCode;
     const ySet = y.cardSetCode;
+
+    // show alts first
+    const xAlt = x.parallelId.indexOf('_') > 0;
+    const yAlt = x.parallelId.indexOf('_') > 0;
+
+    if (xAlt !== yAlt) {
+        return xAlt ? xAlt : yAlt;
+    }
+
     if (xSet === ySet) {
         return x.parallelId.localeCompare(y.parallelId);
     }

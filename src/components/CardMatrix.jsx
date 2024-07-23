@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/CardMatrix.css';
 import CardWithControls from "./CardWithControls";
+import { sortCards } from "../utils/SortAndFilters";
 
 const IMAGE_PATH = '/cards';
 

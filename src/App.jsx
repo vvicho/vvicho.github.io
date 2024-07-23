@@ -162,6 +162,7 @@ function App() {
     navigator.clipboard.writeText(val.join('\n'));
     setShowExportScreen(true);
     exportComponentAsPNG(compRef, { fileName: currentCollection });
+    setShowExportScreen(false);
   }
 
   function clearCollection() {
