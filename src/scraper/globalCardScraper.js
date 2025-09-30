@@ -1,11 +1,11 @@
 import axios, { Axios } from 'axios'
 import { load as cheerioLoad } from 'cheerio';
-import allCards from '../assets/allCards.json' assert {type: 'json'};
+import allCards from '../assets/allCards.json' with {type: 'json'};
 import fs from 'fs';
 import path from 'path'
 import request from 'request';
-import missingCardImages from '../assets/missingCardImages.json' assert {type: 'json'};
-import downloadedSets from '../assets/sets.json' assert {type: 'json'};
+import missingCardImages from '../assets/missingCardImages.json' with {type: 'json'};
+import downloadedSets from '../assets/sets.json' with {type: 'json'};
 
 const GLB_BASE_URL = "https://en.onepiece-cardgame.com";
 const IMAGE_SAVE_PATH = 'public/cards';
@@ -20,9 +20,7 @@ const run = async (url, lang, partialRun = false, force = false) => {
     const missingImages = {};
     missingCardImages.missingCards?.map(id => missingImages[id] = '');
     for (var seriesId of Object.keys(series)) {
-        console.log(`getCardsFromSeries ${seriesId} start`);
         let cards = await getCardsFromSeries(seriesId, url, lang);
-        console.log(`getCardsForSeries ${seriesId} end`)
         for (let i = 0; i < cards.length; i++) {
             const card = cards[i];
             sets[seriesId] = series[seriesId];
@@ -37,9 +35,9 @@ const run = async (url, lang, partialRun = false, force = false) => {
                 allCards[card.parallelId] = card;
             }
 
-            if (missingCardImages &&
+            if ((missingCardImages &&
                 missingCardImages.missingCards &&
-                missingCardImages.missingCards.indexOf(card.cardId) >= 0
+                missingCardImages.missingCards.indexOf(card.cardId) >= 0) || card.cardSet === 'OP08' || card.cardSet === 'ST14' || card.cardSet === 'OP-08' || card.cardSet === 'ST-14'
             ) {
                 console.log(`--- missing image ${card.parallelId}`);
                 missingImages[card.parallelId] = card;
@@ -151,8 +149,10 @@ const getCardsFromSeries = async (seriesId, url, lang) => {
         const elem = $(ref);
         const info = elem.find('.infoCol').text().replace('\n', '').split('|').map(e => e.trim());
         const name = elem.find('.cardName').text();
-        const fullImgUrl = elem.find('.frontCol').find('img').attr('src');
+        const fullImgUrl = elem.find('.frontCol').find('img').attr('data-src');
+        console.log(fullImgUrl)
         const imgFile = fullImgUrl.substring(fullImgUrl.lastIndexOf('/') + 1, fullImgUrl.indexOf('?'));
+        console.log(imgFile);
         let cost = elem.find('.cost').text().replace(/Life|Cost/, '');
         const attribute = elem.find('.attribute').find('i').text();
         const power = elem.find('.power').text().replace('Power', '');
@@ -227,7 +227,7 @@ const download = async (card, callback) => {
 // partialRunRun will run for not downloaded sets
 // await run(GLB_BASE_URL, 'en', partialRun = false);
 // force will download everything again (remember to compress pngs)
-// await run(GLB_BASE_URL, 'en', force = true);
+// await run(GLB_BASE_URL, 'en', true);
 
 // partial 
 // await run(GLB_BASE_URL, 'en', true, false);
