@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "generatedAt": "2025-10-24T11:27:24.229Z"
+  },
+  "edges": [
+    {
+      "from": "OP05-097",
+      "to": "OP05-084",
+      "reason": "Cost reducer: Celestial Dragons",
+      "score": 0.2
+    },
+    {
+      "from": "OP05-097",
+      "to": "OP05-089",
+      "reason": "Cost reducer: Celestial Dragons",
+      "score": 0.2
+    },
+    {
+      "from": "OP05-097",
+      "to": "OP05-092",
+      "reason": "Cost reducer: Celestial Dragons",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "EB01-013",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "EB01-018",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP06-036",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP02-027",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP02-030",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP02-038",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP02-042",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-032",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-033",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-034",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-035",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-040",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-043",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-046",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-052",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP01-121",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "P-008",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP12-022",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP12-023",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP12-024",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP12-025",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP12-029",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP02-025",
+      "to": "OP12-032",
+      "reason": "Cost reducer: Land of Wano",
+      "score": 0.2
+    },
+    {
+      "from": "OP12-061",
+      "to": "ST10-010",
+      "reason": "Cost reducer: Trafalgar Law",
+      "score": 0.4
+    },
+    {
+      "from": "OP12-061",
+      "to": "OP10-119",
+      "reason": "Cost reducer: Trafalgar Law",
+      "score": 0.4
+    },
+    {
+      "from": "OP12-061",
+      "to": "OP12-073",
+      "reason": "Cost reducer: Trafalgar Law",
+      "score": 0.4
+    },
+    {
+      "from": "OP12-061",
+      "to": "OP12-106",
+      "reason": "Cost reducer: Trafalgar Law",
+      "score": 0.4
+    },
+    {
+      "from": "OP12-061",
+      "to": "P-088",
+      "reason": "Cost reducer: Trafalgar Law",
+      "score": 0.4
+    }
+  ]
+}
