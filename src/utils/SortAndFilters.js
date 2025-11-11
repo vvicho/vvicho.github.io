@@ -23,11 +23,13 @@ export const sortCardsById = (x, y) => {
     const indexOfX = setOrder.indexOf(setX);
     const indexOfY = setOrder.indexOf(setY);
 
-    const xAlt = x.parallelId.indexOf('_') > 0;
-    const yAlt = x.parallelId.indexOf('_') > 0;
+    // consider alts as those with "_" in the id. can't do _p since some cards have another suffix
+    const xAlt = x.parallelId.indexOf('_') > -1;
+    const yAlt = y.parallelId.indexOf('_') > -1;
 
     if (xAlt !== yAlt) {
-        return xAlt ? xAlt : yAlt;
+        // alts first
+        return xAlt ? -1 : 1;
     }
 
     if (indexOfX !== indexOfY) {
@@ -41,11 +43,12 @@ export const sortCards = (x, y) => {
     const ySet = y.cardSetCode;
 
     // show alts first
-    const xAlt = x.parallelId.indexOf('_') > 0;
-    const yAlt = x.parallelId.indexOf('_') > 0;
+    const xAlt = x.parallelId.indexOf('_') > -1;
+    const yAlt = y.parallelId.indexOf('_') > -1;
 
     if (xAlt !== yAlt) {
-        return xAlt ? xAlt : yAlt;
+        // alts first
+        return xAlt ? -1 : 1;
     }
 
     if (xSet === ySet) {
@@ -69,9 +72,9 @@ const filterCards = (cards, cardAmounts, valueToPropertyMap, noAlts, onlyAlts, c
     }
 
     // only alts
-    cardObjects = cardObjects.filter(x => onlyAlts === true ? x.parallelId.indexOf('_p') > 0 : true);
+    cardObjects = cardObjects.filter(x => onlyAlts === true ? x.parallelId.indexOf('_') > 0 : true);
     // no alts
-    cardObjects = cardObjects.filter(x => noAlts === true ? x.parallelId.indexOf('_p') === -1 : true);
+    cardObjects = cardObjects.filter(x => noAlts === true ? x.parallelId.indexOf('_') === -1 : true);
     // collected cards
     cardObjects = cardObjects.filter(x => collectedCards ? cardAmounts[x.parallelId] > 0 : true);
     // missing cards

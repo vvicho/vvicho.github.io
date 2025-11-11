@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     max-width: 100%;
     padding: 10px;
+    gap: 10px;
     border-color: white;
     /* justify-content: ; */
 }

@@ -4,38 +4,39 @@
 
 .count {
     position: absolute;
+    top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    background-color: white;
+    background-color: rgba(0,0,0,0.7);
     border-radius: 50%;
     border-style: solid;
-    border-color: black;
-    color: black;
+    border-color: rgba(255,255,255,0.25);
+    color: white;
     width: 30px;
     height: 30px;
     justify-content: center;
     cursor: default;
     user-select: none;
     font-weight: bold;
+    z-index: 3;
 }
 
 .controlsContainer {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 8px;
     display: flex;
     flex-direction: row;
-
+    transform: translateX(-50%);
 }
 
 .extra {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: -50%;
 }
 
 .control {

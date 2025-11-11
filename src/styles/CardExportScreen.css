@@ -1,8 +1,14 @@
 .cardScreenContainer {
     max-width: 1920px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px 12px;
     justify-content: center;
     background-color: #222;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.cardScreenHidden {
+    display: none;
 }

@@ -3,9 +3,16 @@
 }
 
 .cardImage {
-    border-radius: 8px;
+    border-radius: 12px;
     width: inherit;
     cursor: pointer;
     border-style: solid;
-    border-color: black;
+    border-color: rgba(255,255,255,0.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.cardImage:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
 }

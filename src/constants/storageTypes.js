@@ -1,6 +1,6 @@
 export const StorageType = {
-    COLLECTION,
-    FOR_TRADE,
-    LOOKING_FOR,
-    EXTRA_TYPES,
+    COLLECTION: 'COLLECTION',
+    FOR_TRADE: 'FOR_TRADE',
+    LOOKING_FOR: 'LOOKING_FOR',
+    EXTRA_TYPES: 'EXTRA_TYPES',
 };

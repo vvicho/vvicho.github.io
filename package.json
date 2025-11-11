@@ -11,16 +11,23 @@
     "cardScraper": "node src/scraper/globalCardScraper.js",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "generate:synergies": "node scripts/generate_synergies.js",
+    "synergy:v2:tags": "tsx src/synergy2/tag_builder.ts",
+    "synergy:v2:edges": "tsx src/synergy2/build_edges.ts",
+    "synergy:v2:index": "tsx src/synergy2/build_index.ts",
+    "synergy:v2:all": "npm run synergy:v2:tags && npm run synergy:v2:edges && npm run synergy:v2:index"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.18",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
     "@stylexjs/stylex": "^0.5.1",
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
     "fs": "^0.0.1-security",
+    "fuse.js": "^7.1.0",
     "gh-pages": "^6.1.1",
     "https": "^1.0.0",
     "image-downloader": "^4.3.0",
@@ -28,6 +35,8 @@
     "react": "^18.2.0",
     "react-component-export-image": "^1.0.6",
     "react-dom": "^18.2.0",
+    "react-force-graph-2d": "^1.29.0",
+    "react-hotkeys-hook": "^5.2.1",
     "react-select": "^5.8.0",
     "request": "^2.88.2",
     "url": "^0.11.3"
@@ -40,6 +49,9 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
     "vite": "^5.2.0"
   }
 }

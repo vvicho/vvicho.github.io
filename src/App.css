@@ -70,6 +70,7 @@
   justify-content: center;
   align-items: center;
   color: white !important;
+  padding: 4px 6px;
 
   svg {
     color: green;

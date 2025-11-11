@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 import '../styles/CardWithControls.css';
 
@@ -9,15 +9,16 @@ export default function CardWithControls({
     cardId,
     amount,
     showControls,
-    showAmount = showControls
+    showAmount = showControls,
+    lazyLoad = true
 }
 ) {
     return (
-        <div className='cardWithControlsContainer'>
+        <div className='cardWithControlsContainer' style={{ width: size }}>
             {showAmount && (
                 <div className='count'>{amount}</div>
             )}
-            <Card uri={uri} size={size} callback={() => { }} key={cardId} />
+            <Card uri={uri} size={size} callback={() => { }} key={cardId} lazy={lazyLoad} />
             {showControls && (
                 <div className="controlsContainer">
                     <div className="extra">
