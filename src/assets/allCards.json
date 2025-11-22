@@ -98218,5 +98218,428 @@
       "Blocker"
     ],
     "parallelId": "ST01-012_p6"
+  },
+  "OP06-063_p2": {
+    "id": "Vinsmoke Sora_OP06-063_p2",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Vinsmoke Sora",
+    "imageName": "OP06-063_p2.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "The Vinsmoke Family",
+      "Kingdom of GERMA"
+    ],
+    "text": "[On Play] You may trash 1 card from your hand: If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 {The Vinsmoke Family} type Character card with 4000 power or less from your trash to your hand.",
+    "cardSet": "CS 25-26 Top Player Pack 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP06-063_p2.png",
+    "cardSetCode": "OP06",
+    "cardId": "OP06-063",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP06-063_p2"
+  },
+  "OP06-063_p3": {
+    "id": "Vinsmoke Sora_OP06-063_p3",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Vinsmoke Sora",
+    "imageName": "OP06-063_p3.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "The Vinsmoke Family",
+      "Kingdom of GERMA"
+    ],
+    "text": "[On Play] You may trash 1 card from your hand: If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 {The Vinsmoke Family} type Character card with 4000 power or less from your trash to your hand.",
+    "cardSet": "CS 25-26 Finalist Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP06-063_p3.png",
+    "cardSetCode": "OP06",
+    "cardId": "OP06-063",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP06-063_p3"
+  },
+  "OP06-063_p4": {
+    "id": "Vinsmoke Sora_OP06-063_p4",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Vinsmoke Sora",
+    "imageName": "OP06-063_p4.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Purple"
+    ],
+    "category": [
+      "The Vinsmoke Family",
+      "Kingdom of GERMA"
+    ],
+    "text": "[On Play] You may trash 1 card from your hand: If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 {The Vinsmoke Family} type Character card with 4000 power or less from your trash to your hand.",
+    "cardSet": "CS 25-26 Winner Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP06-063_p4.png",
+    "cardSetCode": "OP06",
+    "cardId": "OP06-063",
+    "activation": [
+      "On Play"
+    ],
+    "parallelId": "OP06-063_p4"
+  },
+  "OP09-043_p1": {
+    "id": "Alvida_OP09-043_p1",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Alvida",
+    "imageName": "OP09-043_p1.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Cross Guild"
+    ],
+    "text": "[On K.O.] If your Leader has the {Cross Guild} type, play up to 1 Character card with a cost of 5 or less other than [Alvida] from your hand.",
+    "cardSet": "CS 25-26 Top Player Pack 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP09-043_p1.png",
+    "cardSetCode": "OP09",
+    "cardId": "OP09-043",
+    "activation": [
+      "On K.O.",
+      "Alvida"
+    ],
+    "parallelId": "OP09-043_p1"
+  },
+  "OP09-043_p2": {
+    "id": "Alvida_OP09-043_p2",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Alvida",
+    "imageName": "OP09-043_p2.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Cross Guild"
+    ],
+    "text": "[On K.O.] If your Leader has the {Cross Guild} type, play up to 1 Character card with a cost of 5 or less other than [Alvida] from your hand.",
+    "cardSet": "CS 25-26 Finalist Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP09-043_p2.png",
+    "cardSetCode": "OP09",
+    "cardId": "OP09-043",
+    "activation": [
+      "On K.O.",
+      "Alvida"
+    ],
+    "parallelId": "OP09-043_p2"
+  },
+  "OP09-043_p3": {
+    "id": "Alvida_OP09-043_p3",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Alvida",
+    "imageName": "OP09-043_p3.png",
+    "cost": "5",
+    "attribute": "Strike",
+    "power": "6000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Blue"
+    ],
+    "category": [
+      "Cross Guild"
+    ],
+    "text": "[On K.O.] If your Leader has the {Cross Guild} type, play up to 1 Character card with a cost of 5 or less other than [Alvida] from your hand.",
+    "cardSet": "CS 25-26 Winner Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP09-043_p3.png",
+    "cardSetCode": "OP09",
+    "cardId": "OP09-043",
+    "activation": [
+      "On K.O.",
+      "Alvida"
+    ],
+    "parallelId": "OP09-043_p3"
+  },
+  "OP09-089_p1": {
+    "id": "Stronger_OP09-089_p1",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Stronger",
+    "imageName": "OP09-089_p1.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Animal",
+      "Blackbeard Pirates"
+    ],
+    "text": "[Activate: Main] You may trash 1 card from your hand and trash this Character: If your Leader has the {Blackbeard Pirates} type, draw 1 card. Then, give up to 1 of your opponent's Characters –2 cost during this turn.",
+    "cardSet": "CS 25-26 Top Player Pack 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP09-089_p1.png",
+    "cardSetCode": "OP09",
+    "cardId": "OP09-089",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP09-089_p1"
+  },
+  "OP09-089_p2": {
+    "id": "Stronger_OP09-089_p2",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Stronger",
+    "imageName": "OP09-089_p2.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Animal",
+      "Blackbeard Pirates"
+    ],
+    "text": "[Activate: Main] You may trash 1 card from your hand and trash this Character: If your Leader has the {Blackbeard Pirates} type, draw 1 card. Then, give up to 1 of your opponent's Characters –2 cost during this turn.",
+    "cardSet": "CS 25-26 Finalist Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP09-089_p2.png",
+    "cardSetCode": "OP09",
+    "cardId": "OP09-089",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP09-089_p2"
+  },
+  "OP09-089_p3": {
+    "id": "Stronger_OP09-089_p3",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Stronger",
+    "imageName": "OP09-089_p3.png",
+    "cost": "1",
+    "attribute": "Wisdom",
+    "power": "-",
+    "counter": "2000",
+    "trigger": "",
+    "color": [
+      "Black"
+    ],
+    "category": [
+      "Animal",
+      "Blackbeard Pirates"
+    ],
+    "text": "[Activate: Main] You may trash 1 card from your hand and trash this Character: If your Leader has the {Blackbeard Pirates} type, draw 1 card. Then, give up to 1 of your opponent's Characters –2 cost during this turn.",
+    "cardSet": "CS 25-26 Winner Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP09-089_p3.png",
+    "cardSetCode": "OP09",
+    "cardId": "OP09-089",
+    "activation": [
+      "Activate: Main"
+    ],
+    "parallelId": "OP09-089_p3"
+  },
+  "OP10-107_p1": {
+    "id": "Jewelry Bonney_OP10-107_p1",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP10-107_p1.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[Blocker][On Play] You may add 1 card from the top or bottom of your Life cards to your hand: Add up to 1 {Supernovas} type Character card with a cost of 5 from your hand to the top of your Life cards face-up.",
+    "cardSet": "CS 25-26 Top Player Pack 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP10-107_p1.png",
+    "cardSetCode": "OP10",
+    "cardId": "OP10-107",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP10-107_p1"
+  },
+  "OP10-107_p2": {
+    "id": "Jewelry Bonney_OP10-107_p2",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP10-107_p2.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[Blocker][On Play] You may add 1 card from the top or bottom of your Life cards to your hand: Add up to 1 {Supernovas} type Character card with a cost of 5 from your hand to the top of your Life cards face-up.",
+    "cardSet": "CS 25-26 Finalist Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP10-107_p2.png",
+    "cardSetCode": "OP10",
+    "cardId": "OP10-107",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP10-107_p2"
+  },
+  "OP10-107_p3": {
+    "id": "Jewelry Bonney_OP10-107_p3",
+    "rarity": "UC",
+    "cardType": "CHARACTER",
+    "name": "Jewelry Bonney",
+    "imageName": "OP10-107_p3.png",
+    "cost": "3",
+    "attribute": "Special",
+    "power": "4000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Yellow"
+    ],
+    "category": [
+      "Supernovas",
+      "Bonney Pirates"
+    ],
+    "text": "[Blocker][On Play] You may add 1 card from the top or bottom of your Life cards to your hand: Add up to 1 {Supernovas} type Character card with a cost of 5 from your hand to the top of your Life cards face-up.",
+    "cardSet": "CS 25-26 Winner Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/OP10-107_p3.png",
+    "cardSetCode": "OP10",
+    "cardId": "OP10-107",
+    "activation": [
+      "Blocker",
+      "On Play"
+    ],
+    "parallelId": "OP10-107_p3"
+  },
+  "P-069_p4": {
+    "id": "Koala_P-069_p4",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Koala",
+    "imageName": "P-069_p4.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "1000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "cardSet": "CS 25-26 Top Player Pack 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-069_p4.png",
+    "cardSetCode": "P",
+    "cardId": "P-069",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "P-069_p4"
+  },
+  "P-069_p5": {
+    "id": "Koala_P-069_p5",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Koala",
+    "imageName": "P-069_p5.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "1000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "cardSet": "CS 25-26 Finalist Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-069_p5.png",
+    "cardSetCode": "P",
+    "cardId": "P-069",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "P-069_p5"
+  },
+  "P-069_p6": {
+    "id": "Koala_P-069_p6",
+    "rarity": "P",
+    "cardType": "CHARACTER",
+    "name": "Koala",
+    "imageName": "P-069_p6.png",
+    "cost": "1",
+    "attribute": "Strike",
+    "power": "1000",
+    "counter": "1000",
+    "trigger": "",
+    "color": [
+      "Red"
+    ],
+    "category": [
+      "Revolutionary Army"
+    ],
+    "text": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "cardSet": "CS 25-26 Winner Card Set 2",
+    "imageUrl": "https://en.onepiece-cardgame.com/images/cardlist/card/P-069_p6.png",
+    "cardSetCode": "P",
+    "cardId": "P-069",
+    "activation": [
+      "Activate: Main",
+      "Once Per Turn"
+    ],
+    "parallelId": "P-069_p6"
   }
 }
