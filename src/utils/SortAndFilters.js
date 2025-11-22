@@ -18,44 +18,48 @@ export const defaultSort = (cards, prop) => {
 }
 
 export const sortCardsById = (x, y) => {
-    const setX = x.cardSetCode.split('-')[0];
-    const setY = y.cardSetCode.split('-')[0];
-    const indexOfX = setOrder.indexOf(setX);
-    const indexOfY = setOrder.indexOf(setY);
+    const groupOf = (code) => (code?.match(/^[A-Za-z]+/)?.[0] ?? '').toUpperCase();
+    const numberOf = (code) => {
+        const m = code?.match(/(\d+)/);
+        return m ? parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
+    };
 
-    // consider alts as those with "_" in the id. can't do _p since some cards have another suffix
-    const xAlt = x.parallelId.indexOf('_') > -1;
-    const yAlt = y.parallelId.indexOf('_') > -1;
+    const groupPriority = { EB: 0, PRB: 1, OP: 2, ST: 3, P: 4, DON: 5 };
 
-    if (xAlt !== yAlt) {
-        // alts first
-        return xAlt ? -1 : 1;
-    }
+    const baseOf = (card) => (card.cardId ?? card.parallelId ?? '').split('_')[0] ?? '';
+    const altRank = (parallelId) => {
+        const m = parallelId?.match(/_p(\d+)/);
+        return m ? parseInt(m[1], 10) : -1; // -1 means base (no alt)
+    };
 
-    if (indexOfX !== indexOfY) {
-        return indexOfX - indexOfY;
-    }
-    return x.parallelId.localeCompare(y.parallelId);
+    const gx = groupOf(x.cardSetCode);
+    const gy = groupOf(y.cardSetCode);
+    const px = groupPriority[gx] ?? 999;
+    const py = groupPriority[gy] ?? 999;
+
+    if (px !== py) return px - py;
+
+    const nx = numberOf(x.cardSetCode);
+    const ny = numberOf(y.cardSetCode);
+    if (nx !== ny) return nx - ny;
+
+    // Within same set, group by base id (cardId or base of parallelId)
+    const bx = baseOf(x);
+    const by = baseOf(y);
+    if (bx !== by) return bx.localeCompare(by);
+
+    // Prioritize alts first, with higher _pN first (descending), then base
+    const ax = altRank(x.parallelId);
+    const ay = altRank(y.parallelId);
+    if (ax !== ay) return ay - ax;
+
+    // Stable fallback
+    return (x.parallelId ?? '').localeCompare(y.parallelId ?? '');
 }
 
 export const sortCards = (x, y) => {
-    const xSet = x.cardSetCode;
-    const ySet = y.cardSetCode;
-
-    // show alts first
-    const xAlt = x.parallelId.indexOf('_') > -1;
-    const yAlt = y.parallelId.indexOf('_') > -1;
-
-    if (xAlt !== yAlt) {
-        // alts first
-        return xAlt ? -1 : 1;
-    }
-
-    if (xSet === ySet) {
-        return x.parallelId.localeCompare(y.parallelId);
-    }
-
-    return setOrder.indexOf(xSet) - setOrder.indexOf(ySet);
+    // Reuse the same ordering as sortCardsById
+    return sortCardsById(x, y);
 }
 
 const filterCards = (cards, cardAmounts, valueToPropertyMap, noAlts, onlyAlts, collectedCards, missingCards) => {
@@ -66,7 +70,8 @@ const filterCards = (cards, cardAmounts, valueToPropertyMap, noAlts, onlyAlts, c
             if (filter[0] === 'name') {
                 return x[filter[0]]?.toLocaleLowerCase().indexOf(filter[1]?.toLocaleLowerCase()) >= 0;
             } else if (filter[0] === 'cardSetCode') {
-                return x[filter[0]]?.toLocaleLowerCase().indexOf(filter[1]?.toLocaleLowerCase().replace("-", "")) === 0;
+                const normalized = filter[1]?.toLocaleLowerCase().replace('-', '');
+                return x[filter[0]]?.toLocaleLowerCase() === normalized;
             }
         });
     }
@@ -94,28 +99,3 @@ export const filterCardsByName = (cards, collection, filterMap, onlyShowAlts, no
 export const sortBy = (cards, prop) => {
 
 }
-
-const setOrder = [
-    "EB01",
-    "OP06",
-    "OP05",
-    "OP04",
-    "OP03",
-    "OP02",
-    "OP01",
-    "ST13",
-    "ST12",
-    "ST11",
-    "ST10",
-    "ST09",
-    "ST08",
-    "ST07",
-    "ST06",
-    "ST05",
-    "ST04",
-    "ST03",
-    "ST02",
-    "ST01",
-    "P",
-    "DON",
-];
