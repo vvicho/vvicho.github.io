@@ -23,7 +23,10 @@ const run = async (url, lang, partialRun = false, force = false) => {
         let cards = await getCardsFromSeries(seriesId, url, lang);
         for (let i = 0; i < cards.length; i++) {
             const card = cards[i];
-            sets[seriesId] = series[seriesId];
+            if (sets[seriesId] == null)) {
+                sets[seriesId] = [];
+            }
+            sets[seriesId].push(series[seriesId]);
             if (downloadedSets[series[seriesId]] != null && partialRun) {
                 console.log(`skip set ${card.cardSetCode}`);
                 continue;
@@ -68,7 +71,7 @@ const run = async (url, lang, partialRun = false, force = false) => {
             x => console.log(`finalized writing file missingImages \n${x}`)
         );
     }
-    sets['DON'] = 'DON';
+    sets['DON'] = ['DON'];
 
     fs.writeFile(
         'src/assets/sets.json',

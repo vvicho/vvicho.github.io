@@ -46,7 +46,7 @@ function App() {
   const [allCards, _setAllCards] = useState({ ...cardFile, ...donCards });
   const [collection, setCollection] = useState({});
   const [showControls, setShowControls] = useState(true);
-  const [currentCollection, setCurrentCollection] = useState('Trades');
+  const [currentCollection, setCurrentCollection] = useState('Want');
   const [saveInputText, setSaveInputText] = useState('');
   const [visibleCollection, setVisibleCollection] = useState(allCards)
   const [filteredCards, setFilteredCards] = useState(allCards);
@@ -58,7 +58,8 @@ function App() {
   const [noAlts, setNoAlts] = useState(false);
   const [addCardsBulkInputText, setAddCardsBulkInputText] = useState(0);
   const exportRef = useRef(null);
-  const [uniqueSets, _] = useState(['', ...Object.values(allSets).filter(x => x != 'LP')]);
+  // const [uniqueSets, _] = useState(['', ...Object.values(allSets).filter(x => x != 'LP')]);
+  const [uniqueSets, _] = useState(['', ...Object.values(allSets).reduce((accumulator, value) => accumulator.concat(value), [])]);
   const [selectedSet, setSelectedSet] = useState('');
   const [collectionNameDropdownOption, setCollectionNameDropdownOption] = useState({});
   const [showTagWorkbench, setShowTagWorkbench] = useState(false);
@@ -161,6 +162,7 @@ function App() {
 
   // Get Collection by Name
   function getCollection(name) {
+
     setCurrentCollection(name);
     if (currentCollection == '' || currentCollection == null) {
       return allCards;
