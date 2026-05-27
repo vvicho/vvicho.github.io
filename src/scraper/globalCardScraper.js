@@ -1,239 +1,284 @@
-import axios, { Axios } from 'axios'
+﻿import axios from 'axios';
 import { load as cheerioLoad } from 'cheerio';
-import allCards from '../assets/allCards.json' with {type: 'json'};
 import fs from 'fs';
-import path from 'path'
-import request from 'request';
-import missingCardImages from '../assets/missingCardImages.json' with {type: 'json'};
-import downloadedSets from '../assets/sets.json' with {type: 'json'};
+import path from 'path';
+import { pipeline } from 'stream/promises';
+import pLimit from 'p-limit';
+import { fileURLToPath } from 'url';
 
-const GLB_BASE_URL = "https://en.onepiece-cardgame.com";
-const IMAGE_SAVE_PATH = 'public/cards';
+// === CONFIGURATION ===
+// Resolve paths relative to THIS file to avoid "directory not found" errors
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const PROJECT_ROOT = path.resolve(__dirname, '../../'); // Adjust if your folder structure differs
 
-const run = async (url, lang, partialRun = false, force = false) => {
-    const sets = {};
-    console.log(`getSeries start`)
-    const series = await getSeries(url);
-    console.log(series);
-    console.log(`getSeries end`);
-    const newCards = {};
-    const missingImages = {};
-    missingCardImages.missingCards?.map(id => missingImages[id] = '');
-    for (var seriesId of Object.keys(series)) {
-        let cards = await getCardsFromSeries(seriesId, url, lang);
-        for (let i = 0; i < cards.length; i++) {
-            const card = cards[i];
-            if (sets[seriesId] == null)) {
-                sets[seriesId] = [];
-            }
-            sets[seriesId].push(series[seriesId]);
-            if (downloadedSets[series[seriesId]] != null && partialRun) {
-                console.log(`skip set ${card.cardSetCode}`);
-                continue;
-            }
-            console.log(`processing card ${card.parallelId}`);
-            if (!allCards[card.parallelId] || force === true) {
-                console.log(`new card ${card.parallelId}`)
-                newCards[card.parallelId] = card;
-                allCards[card.parallelId] = card;
-            }
-
-            if ((missingCardImages &&
-                missingCardImages.missingCards &&
-                missingCardImages.missingCards.indexOf(card.cardId) >= 0) || card.cardSet === 'OP08' || card.cardSet === 'ST14' || card.cardSet === 'OP-08' || card.cardSet === 'ST-14'
-            ) {
-                console.log(`--- missing image ${card.parallelId}`);
-                missingImages[card.parallelId] = card;
-            }
-        }
-    }
-
-    // download images for new cards
-    console.log('download newCards');
-    console.log(newCards);
-    if (newCards && newCards != {}) {
-        // overwrite allCards json
-        await downloadImagesInBatches(newCards);
-        fs.writeFile(
-            'src/assets/allCards.json',
-            JSON.stringify(allCards, null, 2),
-            x => console.log(`finalized writing file allCards ${x}`)
-        );
-    }
-    console.log('download missing images')
-    // console.log(missingImages);
-    if (missingImages && missingImages != {}) {
-        await downloadImagesInBatches(missingImages);
-        // overwrite missingImages json
-        fs.writeFile(
-            'src/assets/missingCardImages.json',
-            JSON.stringify({ missingCards: [] }, null, 2),
-            x => console.log(`finalized writing file missingImages \n${x}`)
-        );
-    }
-    sets['DON'] = ['DON'];
-
-    fs.writeFile(
-        'src/assets/sets.json',
-        JSON.stringify(sets, null, 2),
-        x => console.log(`finalized writing file sets \n${x}`)
-    );
-}
-
-const downloadImagesInBatches = async cards => {
-    let ids = Object.keys(cards);
-    console.log(ids);
-    // ids = ids.sort()
-    const sliceIntoChunks = (arr, chunkSize) => {
-        const newArr = [];
-        while (arr.length) {
-            newArr.push(arr.splice(0, chunkSize))
-        }
-        return newArr;
-    }
-
-    const chunks = sliceIntoChunks(ids, 20);
-
-    while (chunks.length) {
-        await Promise.all(
-            chunks.shift().map(
-                cardId => new Promise((resolve, reject) => {
-                    setTimeout(() => {
-                        download(
-                            cards[cardId],
-                            () => console.log(`finished downloading ${cards[cardId].parallelId}`)
-                        )
-                        resolve()
-                    }, 3000);
-                })
-            )
-        );
-    }
-}
-
-
-
-const getSeries = async (url) => {
-    const response = await axios.get(`${url}/cardlist`, {
-        method: 'GET',
-        headers: {
-            Accept: 'text/html',
-        },
-    });
-    const $ = cheerioLoad(response.data);
-    const seriesSelector = $('#series');
-    const options = seriesSelector.find('option');
-    const seriesMap = {};
-    options.each((_, ref) => {
-        const elem = $(ref);
-        console.log(elem.contents().first().text());
-        const seriesId = elem.attr('value');
-        if (seriesId === undefined || seriesId === '') return;
-        let seriesCode = elem.contents().first().text();
-        seriesCode = seriesCode.substring(seriesCode.indexOf('[') + 1, seriesCode.indexOf(']'));
-        seriesCode = seriesId === '569901' ? 'P' : seriesId === '569801' ? "LP" : seriesCode;
-        seriesMap[seriesId] = seriesCode;
-    });
-
-    return seriesMap;
-}
-
-const getCardsFromSeries = async (seriesId, url, lang) => {
-    const response = await axios.get(`${url}/cardlist?series=${seriesId}`, {
-        method: 'GET',
-        headers: {
-            Accept: 'text/html',
-        },
-    });
-    const $ = cheerioLoad(response.data);
-    const cardModalList = $('.modalCol');
-    const cards = [];
-    cardModalList.each((_, ref) => {
-        const elem = $(ref);
-        const info = elem.find('.infoCol').text().replace('\n', '').split('|').map(e => e.trim());
-        const name = elem.find('.cardName').text();
-        const fullImgUrl = elem.find('.frontCol').find('img').attr('data-src');
-        console.log(fullImgUrl)
-        const imgFile = fullImgUrl.substring(fullImgUrl.lastIndexOf('/') + 1, fullImgUrl.indexOf('?'));
-        console.log(imgFile);
-        let cost = elem.find('.cost').text().replace(/Life|Cost/, '');
-        const attribute = elem.find('.attribute').find('i').text();
-        const power = elem.find('.power').text().replace('Power', '');
-        const counter = elem.find('.counter').text().replace('Counter', '');
-        const color = elem.find('.color').text().replace('Color', '').split('\/');
-        const types = elem.find('.feature').text().replace('Type', '').split('\/');
-        const text = elem.find('.text').text().replace('Effect', '');
-        const set = elem.find('.getInfo').text().replace(/\[.+\]/, '').replace('Card Set(s)', '').trim();
-        const trigger = elem.find('.trigger').text().replace(/\[.+\]/, '').trim();
-        const activations = getActivations(text);
-        const imgUrl = `${url}/images/cardlist/card/${imgFile}`;
-        const parallelId = getParallelId(name, info[0], imgFile);
-        if (cost === '-' && info[2] === 'EVENT') { cost = '0' };
-        const card = {
-            id: `${name}_${parallelId}`, // generated card id (cardId+parallelNumber)
-            rarity: info[1],
-            cardType: info[2],
-            name: name,
-            imageName: imgFile,
-            cost: cost,
-            attribute: attribute,
-            power: power,
-            counter: counter,
-            trigger: trigger,
-            color: color,
-            category: types,
-            text: text,
-            cardSet: set,
-            imageUrl: imgUrl,
-            cardSetCode: getSetCode(info[0]),
-            cardId: info[0],
-            activation: activations,
-            parallelId: parallelId,
-        };
-
-        cards.push(card);
-        return;
-    });
-    return cards;
-}
-
-const getSetCode = (cardSet) => {
-    return cardSet.split('-')[0];
-}
-
-const getActivations = (text) => {
-    var n = text.match(/\[(.*?)\]/gm);
-    if (!n) return null;
-    return n.map(x => x.replace(/\[|\]/g, ''));
-}
-
-const getParallelId = (name, id, imgUrl) => {
-    const match = imgUrl.match(/\_(p[0-9])\.png/);
-    if (!match) return id;
-
-    return `${id}_${match[1]}`;
-}
-
-const download = async (card, callback) => {
-    console.log(card);
-    console.log(`downloading ${card.parallelId}`);
-    request.head(card.imageUrl, function (_a, _b, _c) {
-        const directoryPath = path.join(path.resolve(), `${IMAGE_SAVE_PATH}/${card.cardSetCode}`);
-        if (!fs.existsSync(directoryPath)) {
-            fs.mkdirSync(directoryPath);
-        }
-        const filename = path.join(directoryPath, `${card.parallelId}.png`)
-        request(card.imageUrl).pipe(fs.createWriteStream(filename)).on('close', callback);
-    });
+const CONFIG = {
+    BASE_URL: "https://en.onepiece-cardgame.com",
+    PATHS: {
+        IMAGES: path.join(PROJECT_ROOT, 'public/cards'),
+        DATA: path.join(PROJECT_ROOT, 'src/assets'),
+    },
+    CONCURRENCY: 5,
+    FORCE_REFRESH: false,
 };
 
-// partialRunRun will run for not downloaded sets
-// await run(GLB_BASE_URL, 'en', partialRun = false);
-// force will download everything again (remember to compress pngs)
-// await run(GLB_BASE_URL, 'en', true);
+// === UTILS ===
+const loadJSON = (filename, defaultValue) => {
+    try {
+        const filePath = path.join(CONFIG.PATHS.DATA, filename);
+        if (!fs.existsSync(filePath)) return defaultValue;
+        return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch (e) {
+        console.warn(`⚠️ Could not load ${filename}, starting fresh.`);
+        return defaultValue;
+    }
+};
 
-// partial 
-// await run(GLB_BASE_URL, 'en', true, false);
-// full
+const saveJSON = (filename, data) => {
+    const filePath = path.join(CONFIG.PATHS.DATA, filename);
+    if (!fs.existsSync(path.dirname(filePath))) {
+        fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    }
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    console.log(`💾 Saved ${filename}`);
+};
 
-await run(GLB_BASE_URL, 'en', false, false);
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+// === CORE SCRAPER ===
+
+const run = async () => {
+    console.time("Scrape Duration");
+    console.log(`🚀 Starting Scraper...`);
+    console.log(`📂 Data Dir: ${CONFIG.PATHS.DATA}`);
+    console.log(`📂 Image Dir: ${CONFIG.PATHS.IMAGES}`);
+
+    // 1. Load Local State
+    let allCards = loadJSON('allCardsArray.json', []);
+    const metadata = loadJSON('scraper_metadata.json', { completedSets: [] });
+
+    // === FIX 1: AUTO-PURGE OLD DATA ===
+    // If data exists but is missing 'baseId' (new schema) or has old-style IDs, wipe it.
+    if (allCards.length > 0) {
+        const sample = allCards[0];
+        if (!sample.baseId || !sample.imageFileName) {
+            console.log('🧹 Old data schema detected. Purging to prevent errors...');
+            allCards = [];
+            metadata.completedSets = []; // Reset metadata too just to be safe
+        }
+    }
+
+    // Create map for deduplication
+    const cardMap = new Map(allCards.map(c => [c.id, c]));
+
+    // 2. Fetch Series List
+    console.log('📡 Fetching Series List...');
+    const seriesMap = await fetchSeriesList();
+
+    // 3. Process Each Series
+    for (const [seriesId, seriesCode] of Object.entries(seriesMap)) {
+
+        if (!CONFIG.FORCE_REFRESH && metadata.completedSets.includes(seriesCode)) {
+            console.log(`⏩ Skipping ${seriesCode} (Already Completed)`);
+            continue;
+        }
+
+        console.log(`\n🔍 Scanning Series: ${seriesCode} (${seriesId})`);
+
+        // Fetch HTML and Parse Cards
+        const cardsInSet = await fetchCardsFromSeries(seriesId, seriesCode);
+
+        if (cardsInSet.length === 0) {
+            console.warn(`⚠️ No cards found for ${seriesCode}.`);
+            continue;
+        }
+
+        // Merge into map
+        let newCardsCount = 0;
+        for (const card of cardsInSet) {
+            // We overwrite to ensure we get the latest schema
+            if (!cardMap.has(card.id) || CONFIG.FORCE_REFRESH) {
+                newCardsCount++;
+            }
+            cardMap.set(card.id, card);
+        }
+        console.log(`   Found ${cardsInSet.length} cards. (${newCardsCount} new/updated)`);
+
+        // Mark set as complete
+        if (!metadata.completedSets.includes(seriesCode)) {
+            metadata.completedSets.push(seriesCode);
+        }
+
+        await sleep(1000);
+    }
+
+    // 4. Save Data
+    const finalArray = Array.from(cardMap.values());
+    saveJSON('allCardsArray.json', finalArray);
+    saveJSON('scraper_metadata.json', metadata);
+
+    // 5. Download Images
+    if (finalArray.length > 0) {
+        await downloadImages(finalArray);
+    } else {
+        console.log('⚠️ No cards to process.');
+    }
+
+    console.log(`\n✅ Job Complete!`);
+    console.timeEnd("Scrape Duration");
+};
+
+const fetchSeriesList = async () => {
+    try {
+        const { data } = await axios.get(`${CONFIG.BASE_URL}/cardlist`);
+        const $ = cheerioLoad(data);
+        const map = {};
+
+        $('#series option').each((_, el) => {
+            const val = $(el).val();
+            if (!val) return;
+
+            let name = $(el).text();
+            const match = name.match(/\[(.*?)\]/);
+            const code = match ? match[1] : name;
+
+            // Normalize promo codes
+            const normalizedCode = val === '569901' ? 'P' : val === '569801' ? 'LP' : code;
+            map[val] = normalizedCode;
+        });
+        return map;
+    } catch (e) {
+        console.error("❌ Failed to fetch series list:", e.message);
+        return {};
+    }
+};
+
+const fetchCardsFromSeries = async (seriesId, seriesCode) => {
+    try {
+        const { data } = await axios.get(`${CONFIG.BASE_URL}/cardlist?series=${seriesId}`);
+        const $ = cheerioLoad(data);
+        const cards = [];
+
+        $('.modalCol').each((_, el) => {
+            const $el = $(el);
+
+            const name = $el.find('.cardName').text();
+            const infoText = $el.find('.infoCol').text();
+            const [rawId, rarity, type] = infoText.split('|').map(s => s.trim());
+
+            const fullImgUrl = $el.find('.frontCol img').attr('data-src') || "";
+            // Ensure we have a string before split
+            const imgFileName = fullImgUrl.includes('/')
+                ? fullImgUrl.split('/').pop().split('?')[0]
+                : `${rawId}.png`; // Fallback if URL is weird
+
+            const pMatch = imgFileName.match(/_(p\d+)\.png$/);
+            const isParallel = !!pMatch;
+            const parallelId = isParallel ? `${rawId}_${pMatch[1]}` : rawId;
+
+            // Final ID: "OP01-001" (Base) or "OP01-001_p1" (Parallel)
+            const finalId = isParallel ? parallelId : rawId;
+
+            const rawEffect = $el.find('.text').text().replace('Effect', '').trim();
+            const activations = parseActivations(rawEffect);
+
+            cards.push({
+                id: finalId,
+                baseId: rawId,
+                isParallel: isParallel,
+                name: name,
+                cardId: rawId,
+                cardSetCode: seriesCode,
+                rarity,
+                cardType: type,
+                color: $el.find('.color').text().replace('Color', '').split('/'),
+                cost: $el.find('.cost').text().replace(/Life|Cost/, ''),
+                power: $el.find('.power').text().replace('Power', ''),
+                counter: $el.find('.counter').text().replace('Counter', ''),
+                attribute: $el.find('.attribute i').text(),
+                category: $el.find('.feature').text().replace('Type', '').split('/'),
+                text: rawEffect,
+                trigger: $el.find('.trigger').text().replace(/\[.*?\]/, '').trim(),
+                imageUrl: `${CONFIG.BASE_URL}/images/cardlist/card/${imgFileName}`,
+                imageFileName: imgFileName,
+                blockNumber: $el.find('.block').text().replace('Block icon', '').trim()
+            });
+        });
+
+        return cards;
+    } catch (e) {
+        console.error(`❌ Error fetching ${seriesCode}:`, e.message);
+        return [];
+    }
+};
+
+const parseActivations = (text) => {
+    if (!text) return [];
+    const matches = text.match(/\[(.*?)\]/gm);
+    if (!matches) return [];
+    return matches
+        .map(x => x.replace(/[\[\]]/g, ''))
+        .filter(x => !x.includes('DON!!'));
+};
+
+// === IMAGE DOWNLOADER ===
+
+// === IMAGE DOWNLOADER ===
+
+const downloadImages = async (cards) => {
+    const total = cards.length;
+    let processed = 0;
+
+    console.log(`\n🖼️  Verifying ${total} images...`);
+
+    const limit = pLimit(CONFIG.CONCURRENCY);
+
+    const downloadTasks = cards.map(card => limit(async () => {
+        // Increment progress immediately when we start processing or finishing a card
+        // We do it at the end of the block to ensure accurate "completion" status
+
+        try {
+            // === FIX 2: DEFENSIVE CHECKS ===
+            if (!card.cardSetCode || !card.imageFileName) {
+                processed++;
+                process.stdout.write(`\r⏳ Progress: ${processed}/${total}`);
+                return;
+            }
+
+            const saveDir = path.join(CONFIG.PATHS.IMAGES, card.cardSetCode);
+            const savePath = path.join(saveDir, card.imageFileName);
+
+            // OPTIMIZATION: Check existance
+            if (!CONFIG.FORCE_REFRESH && fs.existsSync(savePath)) {
+                processed++;
+                process.stdout.write(`\r⏳ Progress: ${processed}/${total}`);
+                return;
+            }
+
+            // Ensure dir exists
+            if (!fs.existsSync(saveDir)) {
+                fs.mkdirSync(saveDir, { recursive: true });
+            }
+
+            const response = await axios({
+                method: 'get',
+                url: card.imageUrl,
+                responseType: 'stream'
+            });
+
+            await pipeline(response.data, fs.createWriteStream(savePath));
+
+        } catch (e) {
+            // console.error(`\n   ❌ Failed ${card.imageFileName}: ${e.message}`);
+        } finally {
+            // Always increment, even on error, so the counter finishes
+            processed++;
+            process.stdout.write(`\r⏳ Progress: ${processed}/${total}`);
+        }
+    }));
+
+    await Promise.all(downloadTasks);
+    console.log(`\n✅ Image verification complete.`);
+};
+
+run();

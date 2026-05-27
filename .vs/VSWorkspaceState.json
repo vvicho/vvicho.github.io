@@ -1,6 +1,5 @@
 {
   "ExpandedNodes": [
-    "",
     "\\public",
     "\\scripts",
     "\\src",
@@ -8,6 +7,5 @@
     "\\src\\components",
     "\\src\\scraper"
   ],
-  "SelectedNode": "\\src\\App.jsx",
   "PreviewInSolutionExplorer": false
 }

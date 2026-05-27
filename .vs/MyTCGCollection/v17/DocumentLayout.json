@@ -48,8 +48,7 @@
               "RelativeToolTip": "src\\scraper\\globalCardScraper.js",
               "ViewState": "AgIAADcAAAAAAAAAAADgv0wAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-03T06:42:42.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:42:42.61Z"
             },
             {
               "$type": "Document",
@@ -61,8 +60,7 @@
               "RelativeToolTip": "src\\assets\\sets.json",
               "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-03T06:41:26.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:41:26.488Z"
             },
             {
               "$type": "Document",
@@ -87,12 +85,7 @@
               "RelativeToolTip": "src\\components\\CardMatrix.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-03T06:40:38.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2026-02-03T06:40:38.225Z"
             }
           ]
         }
